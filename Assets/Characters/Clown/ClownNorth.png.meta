@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 732d6b080dd44a5408e4a871005bf807
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5014887413358346848
+    second: ClownNorth_0
+  - first:
+      213: -7173066813188947027
+    second: ClownNorth_1
+  - first:
+      213: -8617065119847645101
+    second: ClownNorth_2
+  - first:
+      213: 5274863647167684718
+    second: ClownNorth_3
+  - first:
+      213: 3513107103503437936
+    second: ClownNorth_4
+  - first:
+      213: 4115324573220229188
+    second: ClownNorth_5
+  - first:
+      213: -995825540679427259
+    second: ClownNorth_6
+  - first:
+      213: 3386672505413989006
+    second: ClownNorth_7
+  - first:
+      213: -7516949360812778472
+    second: ClownNorth_8
+  - first:
+      213: -2780878994866774647
+    second: ClownNorth_9
+  - first:
+      213: 2770368136007741621
+    second: ClownNorth_10
+  - first:
+      213: 8812621676087345428
+    second: ClownNorth_11
+  - first:
+      213: 4112956038182813152
+    second: ClownNorth_12
+  - first:
+      213: -2836353727057106449
+    second: ClownNorth_13
+  - first:
+      213: -5527903990607316463
+    second: ClownNorth_14
+  - first:
+      213: -4173365806331520242
+    second: ClownNorth_15
+  - first:
+      213: -7159764118218962319
+    second: ClownNorth_16
+  - first:
+      213: -1264560480892062029
+    second: ClownNorth_17
+  - first:
+      213: -2365592445122138913
+    second: ClownNorth_18
+  - first:
+      213: -3691989320966750893
+    second: ClownNorth_19
+  - first:
+      213: 8291848764821329220
+    second: ClownNorth_20
+  - first:
+      213: 6015892585155969351
+    second: ClownNorth_21
+  - first:
+      213: 2803143581842236338
+    second: ClownNorth_22
+  - first:
+      213: -3807505022402058257
+    second: ClownNorth_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ClownNorth_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 279
+        width: 76
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0adb232b77a876ab0800000000000000
+      internalID: -5014887413358346848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownNorth_1
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 279
+        width: 76
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da3cab9ecb5247c90800000000000000
+      internalID: -7173066813188947027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownNorth_2
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 279
+        width: 76
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 350821dbde80a6880800000000000000
+      internalID: -8617065119847645101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownNorth_3
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 280
+        width: 76
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e602d082a84143940800000000000000
+      internalID: 5274863647167684718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownNorth_4
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 280
+        width: 75
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07059322c4011c030800000000000000
+      internalID: 3513107103503437936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownNorth_5
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 279
+        width: 74
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4405a3a35e19c1930800000000000000
+      internalID: 4115324573220229188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownNorth_6
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 186
+        width: 74
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b9a8562fd1e22f0800000000000000
+      internalID: -995825540679427259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownNorth_7
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 186
+        width: 74
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8278c743b0effe20800000000000000
+      internalID: 3386672505413989006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownNorth_8
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 186
+        width: 73
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81c9722026e6ea790800000000000000
+      internalID: -7516949360812778472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownNorth_9
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 186
+        width: 73
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98dde93b9455869d0800000000000000
+      internalID: -2780878994866774647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownNorth_10
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 186
+        width: 74
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b07dc34423527620800000000000000
+      internalID: 2770368136007741621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownNorth_11
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 186
+        width: 73
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 411081f19b8bc4a70800000000000000
+      internalID: 8812621676087345428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownNorth_12
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 94
+        width: 74
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ed3fa0b9b7241930800000000000000
+      internalID: 4112956038182813152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownNorth_13
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 94
+        width: 73
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe9e769105f33a8d0800000000000000
+      internalID: -2836353727057106449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownNorth_14
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 94
+        width: 74
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11af26fcb90f843b0800000000000000
+      internalID: -5527903990607316463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownNorth_15
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 94
+        width: 73
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b19db19e93516c0800000000000000
+      internalID: -4173365806331520242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownNorth_16
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 94
+        width: 71
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a88f1f77863ac90800000000000000
+      internalID: -7159764118218962319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownNorth_17
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 94
+        width: 72
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b67e6b41f0637ee0800000000000000
+      internalID: -1264560480892062029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownNorth_18
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1
+        width: 72
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdca521643abb2fd0800000000000000
+      internalID: -2365592445122138913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownNorth_19
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1
+        width: 72
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35dbd39064b63ccc0800000000000000
+      internalID: -3691989320966750893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownNorth_20
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 1
+        width: 72
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 445df6ef480921370800000000000000
+      internalID: 8291848764821329220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownNorth_21
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 1
+        width: 71
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 741c021ce6ebc7350800000000000000
+      internalID: 6015892585155969351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownNorth_22
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1
+        width: 73
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b36f1a6c34c6e620800000000000000
+      internalID: 2803143581842236338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownNorth_23
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 1
+        width: 72
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe7a53bea56092bc0800000000000000
+      internalID: -3807505022402058257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ClownNorth_0: -5014887413358346848
+      ClownNorth_1: -7173066813188947027
+      ClownNorth_10: 2770368136007741621
+      ClownNorth_11: 8812621676087345428
+      ClownNorth_12: 4112956038182813152
+      ClownNorth_13: -2836353727057106449
+      ClownNorth_14: -5527903990607316463
+      ClownNorth_15: -4173365806331520242
+      ClownNorth_16: -7159764118218962319
+      ClownNorth_17: -1264560480892062029
+      ClownNorth_18: -2365592445122138913
+      ClownNorth_19: -3691989320966750893
+      ClownNorth_2: -8617065119847645101
+      ClownNorth_20: 8291848764821329220
+      ClownNorth_21: 6015892585155969351
+      ClownNorth_22: 2803143581842236338
+      ClownNorth_23: -3807505022402058257
+      ClownNorth_3: 5274863647167684718
+      ClownNorth_4: 3513107103503437936
+      ClownNorth_5: 4115324573220229188
+      ClownNorth_6: -995825540679427259
+      ClownNorth_7: 3386672505413989006
+      ClownNorth_8: -7516949360812778472
+      ClownNorth_9: -2780878994866774647
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

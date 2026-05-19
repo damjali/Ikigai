@@ -1,0 +1,644 @@
+fileFormatVersion: 2
+guid: 56df23cae189a5d449b9cedb0148cfa6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7361383439601963820
+    second: ghostmovingright_removedbackground_0
+  - first:
+      213: -6971073439179525584
+    second: ghostmovingright_removedbackground_1
+  - first:
+      213: -6163088201437367065
+    second: ghostmovingright_removedbackground_2
+  - first:
+      213: -371727966183910102
+    second: ghostmovingright_removedbackground_3
+  - first:
+      213: -2672290537164414577
+    second: ghostmovingright_removedbackground_4
+  - first:
+      213: -2210534631065468175
+    second: ghostmovingright_removedbackground_5
+  - first:
+      213: 3488361889199942976
+    second: ghostmovingright_removedbackground_6
+  - first:
+      213: 7854015598780613214
+    second: ghostmovingright_removedbackground_7
+  - first:
+      213: -6459684040076524047
+    second: ghostmovingright_removedbackground_8
+  - first:
+      213: 184295091719811882
+    second: ghostmovingright_removedbackground_9
+  - first:
+      213: -7340361986975292194
+    second: ghostmovingright_removedbackground_10
+  - first:
+      213: -6994096967446606823
+    second: ghostmovingright_removedbackground_11
+  - first:
+      213: 8481490856740364892
+    second: ghostmovingright_removedbackground_12
+  - first:
+      213: -6971328022034557536
+    second: ghostmovingright_removedbackground_13
+  - first:
+      213: -2945124787511258402
+    second: ghostmovingright_removedbackground_14
+  - first:
+      213: 769610548498478669
+    second: ghostmovingright_removedbackground_15
+  - first:
+      213: -2518677824775166959
+    second: ghostmovingright_removedbackground_16
+  - first:
+      213: -1425264615840073972
+    second: ghostmovingright_removedbackground_17
+  - first:
+      213: -325995559619574723
+    second: ghostmovingright_removedbackground_18
+  - first:
+      213: -2053320780722728398
+    second: ghostmovingright_removedbackground_19
+  - first:
+      213: -8604372298972818314
+    second: ghostmovingright_removedbackground_20
+  - first:
+      213: -8556318366719664780
+    second: ghostmovingright_removedbackground_21
+  - first:
+      213: 5574671436142264550
+    second: ghostmovingright_removedbackground_22
+  - first:
+      213: -395227612488127708
+    second: ghostmovingright_removedbackground_23
+  - first:
+      213: 4401812744494908419
+    second: ghostmovingright_removedbackground_24
+  - first:
+      213: 3210644998995441334
+    second: ghostmovingright_removedbackground_25
+  - first:
+      213: 6340049452407782734
+    second: ghostmovingright_removedbackground_26
+  - first:
+      213: -8445120059362553619
+    second: ghostmovingright_removedbackground_27
+  - first:
+      213: -3389639175905716577
+    second: ghostmovingright_removedbackground_28
+  - first:
+      213: -1738819988453098072
+    second: ghostmovingright_removedbackground_29
+  - first:
+      213: -8488835445833497614
+    second: ghostmovingright_removedbackground_30
+  - first:
+      213: 3037607613155862255
+    second: ghostmovingright_removedbackground_31
+  - first:
+      213: -804632047730902580
+    second: ghostmovingright_removedbackground_32
+  - first:
+      213: -4812141358802675732
+    second: ghostmovingright_removedbackground_33
+  - first:
+      213: -2546079210393455165
+    second: ghostmovingright_removedbackground_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ghostmovingright_removedbackground_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 267
+        width: 74
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c231bec6c33e82660800000000000000
+      internalID: 7361383439601963820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostmovingright_removedbackground_1
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 265
+        width: 72
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0323b8234a5c14f90800000000000000
+      internalID: -6971073439179525584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostmovingright_removedbackground_2
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 187
+        width: 93
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e4bce92fef487aa0800000000000000
+      internalID: -6163088201437367065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostmovingright_removedbackground_3
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 269
+        width: 87
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a25978e526b57daf0800000000000000
+      internalID: -371727966183910102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostmovingright_removedbackground_4
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 270
+        width: 93
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f816da33aed1aead0800000000000000
+      internalID: -2672290537164414577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostmovingright_removedbackground_5
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 360
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f2c4a7077a9251e0800000000000000
+      internalID: -2210534631065468175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostmovingright_removedbackground_9
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 186
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23bec3d86fbe8200800000000000000
+      internalID: 184295091719811882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostmovingright_removedbackground_11
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 184
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91c45ba4dd9ffee90800000000000000
+      internalID: -6994096967446606823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostmovingright_removedbackground_13
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 180
+        width: 84
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a557e1891ed04f90800000000000000
+      internalID: -6971328022034557536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostmovingright_removedbackground_18
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 107
+        width: 107
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34458604c4d97bf0800000000000000
+      internalID: -325995559619574723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostmovingright_removedbackground_20
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 107
+        width: 104
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67493846bf0279880800000000000000
+      internalID: -8604372298972818314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostmovingright_removedbackground_21
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 109
+        width: 103
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47d168e57c9d14980800000000000000
+      internalID: -8556318366719664780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostmovingright_removedbackground_23
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 109
+        width: 107
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42b2838949ed38af0800000000000000
+      internalID: -395227612488127708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostmovingright_removedbackground_26
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 15
+        width: 101
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4dfc2dc2616cf750800000000000000
+      internalID: 6340049452407782734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostmovingright_removedbackground_27
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 14
+        width: 106
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de05b28dc08ecca80800000000000000
+      internalID: -8445120059362553619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostmovingright_removedbackground_28
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 15
+        width: 106
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f96546be02595f0d0800000000000000
+      internalID: -3389639175905716577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostmovingright_removedbackground_29
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 14
+        width: 109
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ad77e3ee687ed7e0800000000000000
+      internalID: -1738819988453098072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 81d977afd8a33c440a3524a65aeb5751
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ghostmovingright_removedbackground_0: 7361383439601963820
+      ghostmovingright_removedbackground_1: -6971073439179525584
+      ghostmovingright_removedbackground_10: -7340361986975292194
+      ghostmovingright_removedbackground_11: -6994096967446606823
+      ghostmovingright_removedbackground_12: 8481490856740364892
+      ghostmovingright_removedbackground_13: -6971328022034557536
+      ghostmovingright_removedbackground_14: -2945124787511258402
+      ghostmovingright_removedbackground_15: 769610548498478669
+      ghostmovingright_removedbackground_16: -2518677824775166959
+      ghostmovingright_removedbackground_17: -1425264615840073972
+      ghostmovingright_removedbackground_18: -325995559619574723
+      ghostmovingright_removedbackground_19: -2053320780722728398
+      ghostmovingright_removedbackground_2: -6163088201437367065
+      ghostmovingright_removedbackground_20: -8604372298972818314
+      ghostmovingright_removedbackground_21: -8556318366719664780
+      ghostmovingright_removedbackground_22: 5574671436142264550
+      ghostmovingright_removedbackground_23: -395227612488127708
+      ghostmovingright_removedbackground_24: 4401812744494908419
+      ghostmovingright_removedbackground_25: 3210644998995441334
+      ghostmovingright_removedbackground_26: 6340049452407782734
+      ghostmovingright_removedbackground_27: -8445120059362553619
+      ghostmovingright_removedbackground_28: -3389639175905716577
+      ghostmovingright_removedbackground_29: -1738819988453098072
+      ghostmovingright_removedbackground_3: -371727966183910102
+      ghostmovingright_removedbackground_30: -8488835445833497614
+      ghostmovingright_removedbackground_31: 3037607613155862255
+      ghostmovingright_removedbackground_32: -804632047730902580
+      ghostmovingright_removedbackground_33: -4812141358802675732
+      ghostmovingright_removedbackground_34: -2546079210393455165
+      ghostmovingright_removedbackground_4: -2672290537164414577
+      ghostmovingright_removedbackground_5: -2210534631065468175
+      ghostmovingright_removedbackground_6: 3488361889199942976
+      ghostmovingright_removedbackground_7: 7854015598780613214
+      ghostmovingright_removedbackground_8: -6459684040076524047
+      ghostmovingright_removedbackground_9: 184295091719811882
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

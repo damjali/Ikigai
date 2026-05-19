@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: a7d0842c6e5192646b8276146e65829e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2801946431213985728
+    second: ClownEastWalk_0
+  - first:
+      213: 4894874547280414577
+    second: ClownEastWalk_1
+  - first:
+      213: -8605081169629547562
+    second: ClownEastWalk_2
+  - first:
+      213: -6082195354578943755
+    second: ClownEastWalk_3
+  - first:
+      213: 2745141209679728672
+    second: ClownEastWalk_4
+  - first:
+      213: 209511592012059656
+    second: ClownEastWalk_5
+  - first:
+      213: 4147194987720183012
+    second: ClownEastWalk_6
+  - first:
+      213: -7703823400129055731
+    second: ClownEastWalk_7
+  - first:
+      213: -412997726393116784
+    second: ClownEastWalk_8
+  - first:
+      213: -7289962770791858393
+    second: ClownEastWalk_9
+  - first:
+      213: 8782420023243046344
+    second: ClownEastWalk_10
+  - first:
+      213: -2515714014437325438
+    second: ClownEastWalk_11
+  - first:
+      213: 3537725039231623834
+    second: ClownEastWalk_12
+  - first:
+      213: 2425429861389410827
+    second: ClownEastWalk_13
+  - first:
+      213: -7131136246382149667
+    second: ClownEastWalk_14
+  - first:
+      213: 2946058056756158240
+    second: ClownEastWalk_15
+  - first:
+      213: -202127791094415252
+    second: ClownEastWalk_16
+  - first:
+      213: -6808828019687888331
+    second: ClownEastWalk_17
+  - first:
+      213: 449098671166401840
+    second: ClownEastWalk_18
+  - first:
+      213: 7011928457904487975
+    second: ClownEastWalk_19
+  - first:
+      213: -4467246931050683435
+    second: ClownEastWalk_20
+  - first:
+      213: 7437618380441637953
+    second: ClownEastWalk_21
+  - first:
+      213: 3263088568608260241
+    second: ClownEastWalk_22
+  - first:
+      213: 8809791606381700629
+    second: ClownEastWalk_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ClownEastWalk_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 277
+        width: 61
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cfde201f6382e620800000000000000
+      internalID: 2801946431213985728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownEastWalk_1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 277
+        width: 60
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17700c277761ee340800000000000000
+      internalID: 4894874547280414577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownEastWalk_2
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 277
+        width: 67
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d3f3d4944c949880800000000000000
+      internalID: -8605081169629547562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownEastWalk_3
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 278
+        width: 62
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f08ac3cc83b79ba0800000000000000
+      internalID: -6082195354578943755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownEastWalk_4
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 277
+        width: 62
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0201f35c263b81620800000000000000
+      internalID: 2745141209679728672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownEastWalk_5
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 277
+        width: 71
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8049432dea558e200800000000000000
+      internalID: 209511592012059656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownEastWalk_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 182
+        width: 59
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec87595edbcd8930800000000000000
+      internalID: 4147194987720183012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownEastWalk_7
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 182
+        width: 68
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0437f62f65861590800000000000000
+      internalID: -7703823400129055731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownEastWalk_8
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 182
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0975b4981ccb44af0800000000000000
+      internalID: -412997726393116784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownEastWalk_9
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 182
+        width: 57
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72ff02ddb79d4da90800000000000000
+      internalID: -7289962770791858393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownEastWalk_10
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 182
+        width: 60
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cdfda9da7c61e970800000000000000
+      internalID: 8782420023243046344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownEastWalk_11
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 182
+        width: 58
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 285cdf4ce63661dd0800000000000000
+      internalID: -2515714014437325438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownEastWalk_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 89
+        width: 60
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a92e764fd26881130800000000000000
+      internalID: 3537725039231623834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownEastWalk_13
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 89
+        width: 61
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b02adb3cb9bd8a120800000000000000
+      internalID: 2425429861389410827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownEastWalk_14
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 89
+        width: 60
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddfba75cd5d190d90800000000000000
+      internalID: -7131136246382149667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownEastWalk_15
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 91
+        width: 59
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02fd0a8913082e820800000000000000
+      internalID: 2946058056756158240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownEastWalk_16
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 91
+        width: 58
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c60459c48d5e13df0800000000000000
+      internalID: -202127791094415252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownEastWalk_17
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 90
+        width: 62
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53ae6c5adfe2281a0800000000000000
+      internalID: -6808828019687888331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownEastWalk_18
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 0
+        width: 61
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03d29fbacd48b3600800000000000000
+      internalID: 449098671166401840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownEastWalk_19
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 0
+        width: 59
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72e79db18cf5f4160800000000000000
+      internalID: 7011928457904487975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownEastWalk_20
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 0
+        width: 59
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d325cea5962102c0800000000000000
+      internalID: -4467246931050683435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownEastWalk_21
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 0
+        width: 61
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 144d325c28ab73760800000000000000
+      internalID: 7437618380441637953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownEastWalk_22
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 0
+        width: 59
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 190888ab3c1d84d20800000000000000
+      internalID: 3263088568608260241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClownEastWalk_23
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 0
+        width: 56
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 516699b2acaa24a70800000000000000
+      internalID: 8809791606381700629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ClownEastWalk_0: 2801946431213985728
+      ClownEastWalk_1: 4894874547280414577
+      ClownEastWalk_10: 8782420023243046344
+      ClownEastWalk_11: -2515714014437325438
+      ClownEastWalk_12: 3537725039231623834
+      ClownEastWalk_13: 2425429861389410827
+      ClownEastWalk_14: -7131136246382149667
+      ClownEastWalk_15: 2946058056756158240
+      ClownEastWalk_16: -202127791094415252
+      ClownEastWalk_17: -6808828019687888331
+      ClownEastWalk_18: 449098671166401840
+      ClownEastWalk_19: 7011928457904487975
+      ClownEastWalk_2: -8605081169629547562
+      ClownEastWalk_20: -4467246931050683435
+      ClownEastWalk_21: 7437618380441637953
+      ClownEastWalk_22: 3263088568608260241
+      ClownEastWalk_23: 8809791606381700629
+      ClownEastWalk_3: -6082195354578943755
+      ClownEastWalk_4: 2745141209679728672
+      ClownEastWalk_5: 209511592012059656
+      ClownEastWalk_6: 4147194987720183012
+      ClownEastWalk_7: -7703823400129055731
+      ClownEastWalk_8: -412997726393116784
+      ClownEastWalk_9: -7289962770791858393
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

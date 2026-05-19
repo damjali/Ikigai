@@ -1,0 +1,17 @@
+Library/
+Temp/
+Build/
+Logs/
+UserSettings/
+/UserSettings
+/.idea
+Reason2Live.sln
+Reason2Live.slnx
+.vscode/extensions.json
+Assembly-CSharp.csproj
+/.vscode
+/UserSettings
+/UserSettings
+/UserSettings
+UserSettings/Layouts/CurrentMaximizeLayout.dwlt
+/UserSettings

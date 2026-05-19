@@ -1,0 +1,684 @@
+fileFormatVersion: 2
+guid: 325bc19f52a539e4e8c68acd7f31cb8e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -867171867098561829
+    second: Hospital_0
+  - first:
+      213: -4858418168225254121
+    second: Hospital_1
+  - first:
+      213: -288786840942854409
+    second: Hospital_2
+  - first:
+      213: 8478856813212925521
+    second: Hospital_3
+  - first:
+      213: -5481046484956788432
+    second: Hospital_4
+  - first:
+      213: -7068461415592548750
+    second: Hospital_5
+  - first:
+      213: -3980488601747667153
+    second: Hospital_6
+  - first:
+      213: 3131502176323091509
+    second: Hospital_7
+  - first:
+      213: 8834362516159522084
+    second: Hospital_8
+  - first:
+      213: -2545753584150641421
+    second: Hospital_9
+  - first:
+      213: -910326735460346120
+    second: Hospital_10
+  - first:
+      213: -7026440785380397879
+    second: Hospital_11
+  - first:
+      213: -4688563999094933531
+    second: Hospital_12
+  - first:
+      213: 4526900440285435816
+    second: Hospital_13
+  - first:
+      213: 1758357405968206654
+    second: Hospital_14
+  - first:
+      213: 7585448648523311001
+    second: Hospital_15
+  - first:
+      213: 2906037219745738060
+    second: Hospital_16
+  - first:
+      213: 6203264210166262128
+    second: Hospital_17
+  - first:
+      213: -9061812061745734355
+    second: Hospital_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hospital_0
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 673
+        width: 34
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 33.5}
+        - {x: -16, y: 33.5}
+        - {x: -16, y: -33.5}
+        - {x: 16, y: -33.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd2c06608cf27f3f0800000000000000
+      internalID: -867171867098561829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital_1
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 740
+        width: 284
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71531a0ca6e639cb0800000000000000
+      internalID: -4858418168225254121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital_2
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 673
+        width: 70
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 35, y: 23.5}
+        - {x: 33, y: 25.5}
+        - {x: -34, y: 25.5}
+        - {x: -35, y: 23.5}
+        - {x: -35, y: -25.5}
+        - {x: 35, y: -25.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe3bc1f5e50efbf0800000000000000
+      internalID: -288786840942854409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital_3
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 673
+        width: 70
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 35, y: 23.5}
+        - {x: 33, y: 25.5}
+        - {x: -34, y: 25.5}
+        - {x: -35, y: 23.5}
+        - {x: -35, y: -25.5}
+        - {x: 35, y: -25.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ef4f44953faa570800000000000000
+      internalID: 8478856813212925521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital_4
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 672
+        width: 26
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 13, y: 33.5}
+        - {x: -12, y: 33.5}
+        - {x: -13, y: 32.5}
+        - {x: -13, y: -33.5}
+        - {x: 13, y: -33.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0394fb203496fe3b0800000000000000
+      internalID: -5481046484956788432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital_5
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 672
+        width: 32
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 33.5}
+        - {x: -15, y: 33.5}
+        - {x: -15, y: -33.5}
+        - {x: 16, y: -33.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2762d07fac7c7ed90800000000000000
+      internalID: -7068461415592548750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital_6
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 672
+        width: 32
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 33.5}
+        - {x: -15, y: 33.5}
+        - {x: -15, y: -33.5}
+        - {x: 16, y: -33.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f27c65cc4b672c8c0800000000000000
+      internalID: -3980488601747667153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital_7
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 672
+        width: 32
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 33.5}
+        - {x: -15, y: 33.5}
+        - {x: -15, y: -33.5}
+        - {x: 16, y: -33.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53cb91153a4557b20800000000000000
+      internalID: 3131502176323091509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital_8
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 584
+        width: 144
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425e6b8e6e5f99a70800000000000000
+      internalID: 8834362516159522084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital_9
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 644
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f4060b6a9aabacd0800000000000000
+      internalID: -2545753584150641421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital_10
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 576
+        width: 24
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6585f38aedd53f0800000000000000
+      internalID: -910326735460346120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital_11
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 578
+        width: 41
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cca51855511d7e90800000000000000
+      internalID: -7026440785380397879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital_12
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 578
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e7f24742efdeeeb0800000000000000
+      internalID: -4688563999094933531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital_13
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 487
+        width: 46
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 22, y: -16}
+        - {x: 23, y: 8}
+        - {x: 23, y: 34}
+        - {x: -23, y: 34}
+        - {x: -23, y: -17}
+        - {x: 22, y: -17}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7d5c447f7c2de30800000000000000
+      internalID: 4526900440285435816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital_14
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 492
+        width: 27
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 13.5, y: 29}
+        - {x: -13.5, y: 29}
+        - {x: -13.5, y: -11}
+        - {x: -12.5, y: -12}
+        - {x: 13.5, y: -12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3b89ea9eb0f66810800000000000000
+      internalID: 1758357405968206654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital_15
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 399
+        width: 46
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 22, y: -16}
+        - {x: 23, y: 8}
+        - {x: 23, y: 34}
+        - {x: -23, y: 34}
+        - {x: -23, y: -17}
+        - {x: 22, y: -17}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997e23d3b5de44960800000000000000
+      internalID: 7585448648523311001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 45
+        width: 100
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 45, y: 97.5}
+        - {x: -50, y: 97.5}
+        - {x: -50, y: -93.5}
+        - {x: 46, y: -92.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d220b5471545820800000000000000
+      internalID: 2906037219745738060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital_17
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 240
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079aadeceeb661650800000000000000
+      internalID: 6203264210166262128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital_18
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 144
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 72, y: 24}
+        - {x: -72, y: 24}
+        - {x: -72, y: -24}
+        - {x: 72, y: -24}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2d9b4ef0f9fd3280800000000000000
+      internalID: -9061812061745734355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b25993950f0a2b9458736277a464b2c3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Hospital_0: -867171867098561829
+      Hospital_1: -4858418168225254121
+      Hospital_10: -910326735460346120
+      Hospital_11: -7026440785380397879
+      Hospital_12: -4688563999094933531
+      Hospital_13: 4526900440285435816
+      Hospital_14: 1758357405968206654
+      Hospital_15: 7585448648523311001
+      Hospital_16: 2906037219745738060
+      Hospital_17: 6203264210166262128
+      Hospital_18: -9061812061745734355
+      Hospital_2: -288786840942854409
+      Hospital_3: 8478856813212925521
+      Hospital_4: -5481046484956788432
+      Hospital_5: -7068461415592548750
+      Hospital_6: -3980488601747667153
+      Hospital_7: 3131502176323091509
+      Hospital_8: 8834362516159522084
+      Hospital_9: -2545753584150641421
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
