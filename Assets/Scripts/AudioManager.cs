@@ -4,7 +4,9 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
 
-    public AudioSource sfxSource;
+    [Header("Audio Sources")]
+    public AudioSource sfxSource; // For quick sounds (medicine, death, etc.)
+    public AudioSource heartbeatSource; // NEW: Dedicated source for the long drum track!
 
     [Header("The Master Switch")]
     public static bool useVoiceSFX = false; // False = Normal, True = Your Voices
@@ -40,7 +42,21 @@ public class AudioManager : MonoBehaviour
     public void PlayHeartbeat()
     {
         AudioClip clipToPlay = useVoiceSFX ? voiceJantung : normalJantung;
-        if(clipToPlay != null) sfxSource.PlayOneShot(clipToPlay);
+        
+        if (clipToPlay != null)
+        {
+            // Set the clip if it isn't already set
+            if (heartbeatSource.clip != clipToPlay)
+            {
+                heartbeatSource.clip = clipToPlay;
+            }
+            
+            // The magic fix: Only play if it is NOT already playing!
+            if (!heartbeatSource.isPlaying)
+            {
+                heartbeatSource.Play();
+            }
+        }
     }
 
     public void PlayMedicineSound()
@@ -62,7 +78,6 @@ public class AudioManager : MonoBehaviour
         if(clipToPlay != null) sfxSource.PlayOneShot(clipToPlay);
     }
 
-    // NEW: Scared Sound
     public void PlayScaredSound()
     {
         AudioClip clipToPlay = useVoiceSFX ? voiceScared : normalScared;
