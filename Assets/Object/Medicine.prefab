@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 21.83, y: 15.67, z: 6.5}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 321457583544307996}
@@ -86,7 +86,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 2619156217251398772, guid: 30a8993c499754541ac01046433301ea, type: 3}
+  m_Sprite: {fileID: -5438225623434878977, guid: a64519a4cbd55784785afdbd01ee02fb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -144,7 +144,7 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2.0000002}
+  m_Size: {x: 0.39, y: 0.92}
   m_Direction: 0
 --- !u!61 &2064981020473153450
 BoxCollider2D:
@@ -180,17 +180,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0026518852, y: 0.057560563}
+  m_Offset: {x: -0.01, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.8, y: 1.31}
+    oldSize: {x: 0.24, y: 0.58}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.69697654, y: 1.144387}
+  m_Size: {x: 0.29, y: 0.76}
   m_EdgeRadius: 0
 --- !u!95 &-5454318410516618294
 Animator:
@@ -227,12 +227,24 @@ PrefabInstance:
       value: shadow
       objectReference: {fileID: 0}
     - target: {fileID: 9002235072948839849, guid: 9de283d22dd5aa240a023cf8d4b2653b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 9002235072948839849, guid: 9de283d22dd5aa240a023cf8d4b2653b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 9002235072948839849, guid: 9de283d22dd5aa240a023cf8d4b2653b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 9002235072948839849, guid: 9de283d22dd5aa240a023cf8d4b2653b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.008
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 9002235072948839849, guid: 9de283d22dd5aa240a023cf8d4b2653b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.59
+      value: -0.31
       objectReference: {fileID: 0}
     - target: {fileID: 9002235072948839849, guid: 9de283d22dd5aa240a023cf8d4b2653b, type: 3}
       propertyPath: m_LocalPosition.z

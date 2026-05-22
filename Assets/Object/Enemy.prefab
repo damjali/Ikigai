@@ -176,6 +176,7 @@ GameObject:
   - component: {fileID: 7557699481983689190}
   - component: {fileID: 3113337273044258767}
   - component: {fileID: -3848576409793291581}
+  - component: {fileID: 3063269321745414729}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -316,7 +317,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -398,6 +399,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7486ce675f9376d46a96b0a7c9643094, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeathArea
+--- !u!70 &3063269321745414729
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126055390282240417}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.8299999, y: 0.81}
+  m_Direction: 0
 --- !u!1 &5575245461195053654
 GameObject:
   m_ObjectHideFlags: 0
