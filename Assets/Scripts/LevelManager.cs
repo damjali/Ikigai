@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Players;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class LevelManager : MonoBehaviour
 {
@@ -12,21 +13,108 @@ public class LevelManager : MonoBehaviour
     public GameObject secretDoor;
     public Lvl1Canvas canvas;
 
+    [Header("Spawning Settings")]
+    public Tilemap wallTilemap;
+    public GameObject medicinePrefab;
+    public GameObject bearPrefab;
+    public Transform bearExit;
+    public int bearCount = 5;
+    public int medicineCount = 3;
+
     void Start()
     {
         foreach (Enemy e in enemies)
         {
-            e.GetComponent<DeathArea>().levelManager = this;
-            monsterBlinks.Add(e.GetComponentInChildren<MonsterBlink>());
+            if (e != null)
+            {
+                e.GetComponent<DeathArea>().levelManager = this;
+                monsterBlinks.Add(e.GetComponentInChildren<MonsterBlink>());
+            }
         }
         
+        if (player2 != null)
+        {
             BlackoutScare blackoutScare = player2.GetComponentInChildren<BlackoutScare>();
-            blackoutScare.levelManager = this;
+            if (blackoutScare != null) blackoutScare.levelManager = this;
+        }
+
+        SpawnRandomObjects();
     }
+
+    void SpawnRandomObjects()
+    {
+        if (wallTilemap == null)
+        {
+            Debug.LogWarning("LevelManager: wallTilemap is not assigned! Cannot spawn objects.");
+            return;
+        }
+
+        BoundsInt bounds = wallTilemap.cellBounds;
+        int centerX = (bounds.xMin + bounds.xMax) / 2;
+
+        // Left Map Bounds
+        BoundsInt leftBounds = new BoundsInt(bounds.xMin, bounds.yMin, 0, centerX - bounds.xMin, bounds.size.y, 1);
+        // Right Map Bounds
+        BoundsInt rightBounds = new BoundsInt(centerX, bounds.yMin, 0, bounds.xMax - centerX, bounds.size.y, 1);
+
+        List<Vector3> leftWalkable = GetWalkablePositions(leftBounds);
+        List<Vector3> rightWalkable = GetWalkablePositions(rightBounds);
+
+        // Spawn Medicine on the Left
+        if (medicinePrefab != null && leftWalkable.Count > 0)
+        {
+            for (int i = 0; i < medicineCount; i++)
+            {
+                int randomIndex = Random.Range(0, leftWalkable.Count);
+                Instantiate(medicinePrefab, leftWalkable[randomIndex], Quaternion.identity);
+                leftWalkable.RemoveAt(randomIndex); // Don't spawn on the same spot
+                if (leftWalkable.Count == 0) break;
+            }
+        }
+
+        // Spawn Bears on the Right
+        if (bearPrefab != null && rightWalkable.Count > 0)
+        {
+            for (int i = 0; i < bearCount; i++)
+            {
+                int randomIndex = Random.Range(0, rightWalkable.Count);
+                GameObject bearObj = Instantiate(bearPrefab, rightWalkable[randomIndex], Quaternion.identity);
+                Bear bearScript = bearObj.GetComponent<Bear>();
+                
+                if (bearScript != null)
+                {
+                    bearScript.wallTilemap = wallTilemap;
+                    bearScript.exit = bearExit;
+                    bearScript.levelManager = this;
+                    bears.Add(bearScript);
+                }
+
+                rightWalkable.RemoveAt(randomIndex);
+                if (rightWalkable.Count == 0) break;
+            }
+        }
+    }
+
+    private List<Vector3> GetWalkablePositions(BoundsInt bounds)
+    {
+        List<Vector3> walkable = new List<Vector3>();
+        for (int x = bounds.xMin; x < bounds.xMax; x++)
+        {
+            for (int y = bounds.yMin; y < bounds.yMax; y++)
+            {
+                Vector3Int pos = new Vector3Int(x, y, 0);
+                if (!wallTilemap.HasTile(pos))
+                {
+                    walkable.Add(wallTilemap.GetCellCenterWorld(pos));
+                }
+            }
+        }
+        return walkable;
+    }
+
     void Update()
     {
         UpdatePlayerInput();
-        
     }
 
     public void resetLevel()
@@ -35,27 +123,33 @@ public class LevelManager : MonoBehaviour
         player2.reset();
         foreach (Enemy e in enemies)
         {
-            print("Resetting enemy: " + e);
-            e.reset();
+            if (e != null)
+            {
+                print("Resetting enemy: " + e);
+                e.reset();
+            }
         }
+        
+        // Note: Bears are destroyed in their own script after a while, 
+        // but if they are still there, they might need resetting or clearing.
+        // For simplicity, we keep them as they are or the user can add logic to clear them.
     }
 
     public void blinkMonster()
     {
         foreach(MonsterBlink b in monsterBlinks)
-         {
-             b.Blink();
-          }
+        {
+            if (b != null) b.Blink();
+        }
     }
 
     public void stopBlink()
     {
         foreach (MonsterBlink b in monsterBlinks)
         {
-            b.StopBlink();
+            if (b != null) b.StopBlink();
         }
     }
-        
     
     private async void UpdatePlayerInput()
     {
