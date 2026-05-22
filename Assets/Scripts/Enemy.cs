@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
 
     [Header("Movement")]
     public float speed = 3f;
-    public float pathUpdateRate = 0.3f;
+    public float pathUpdateRate = 0.1f;
 
     [Header("Behavior Settings")]
     public float lockOnDistance = 3f;
@@ -28,9 +28,7 @@ public class Enemy : MonoBehaviour
 
     [Header("Audio Settings (The Heartbeat)")]
     public float heartbeatDistance = 8f; // How close before the heartbeat starts
-    public float maxHeartbeatRate = 1.2f; // Slow beat (when enemy is at the edge of the distance)
-    public float minHeartbeatRate = 0.3f; // Fast, frantic beat (when enemy is right next to you)
-    private float heartbeatTimer;
+    private float heartbeatTimer; // Now used as a pure 3-second cooldown
 
     [Header("Spawn Settings")]
     private float originX;
@@ -79,17 +77,20 @@ public class Enemy : MonoBehaviour
         if (distanceToPlayer <= heartbeatDistance)
         {
             heartbeatTimer -= Time.deltaTime;
+            
             if (heartbeatTimer <= 0)
             {
-                // Play the sound!
+                // Play the sound (AudioManager will block it if it's already playing!)
                 AudioManager.instance.PlayHeartbeat();
                 
-                // Calculate how close the monster is (0 = touching you, 1 = far away)
-                float distanceRatio = distanceToPlayer / heartbeatDistance;
-                
-                // Make the timer shorter (faster heartbeat) as the monster gets closer!
-                heartbeatTimer = Mathf.Lerp(minHeartbeatRate, maxHeartbeatRate, distanceRatio);
+                // Wait exactly 3 seconds before checking again
+                heartbeatTimer = 3f; 
             }
+        }
+        else
+        {
+            // Reset the timer when player escapes so it triggers immediately next time
+            heartbeatTimer = 0f;
         }
         // ---------------------------------------------
 
@@ -108,11 +109,9 @@ public class Enemy : MonoBehaviour
     {
         if (anim != null)
         {
-            // Is the object moving based on our calculated movement vector?
             bool isMoving = currentMovement.sqrMagnitude > 0;
             anim.SetBool("IsMoving", isMoving);
 
-            // Only update direction when moving to keep idle direction
             if (isMoving)
             {
                 anim.SetFloat("MoveX", currentMovement.x);
@@ -175,25 +174,29 @@ public class Enemy : MonoBehaviour
     }
 
     void FollowPath()
+{
+    if (currentPath == null || currentPath.Count == 0 || pathIndex >= currentPath.Count)
     {
-        if (currentPath == null || currentPath.Count == 0 || pathIndex >= currentPath.Count)
-        {
-            currentMovement = Vector2.zero;
-            return;
-        }
-
-        // Calculate Movement Vector for Animation
-        Vector3 directionToTarget = (currentTargetWithJitter - transform.position).normalized;
-        currentMovement = new Vector2(directionToTarget.x, directionToTarget.y);
-
-        transform.position = Vector3.MoveTowards(transform.position, currentTargetWithJitter, individualSpeed * Time.deltaTime);
-
-        if (Vector2.Distance(transform.position, currentTargetWithJitter) < 0.15f)
-        {
-            pathIndex++;
-            if (pathIndex < currentPath.Count) UpdateJitteredTarget();
-        }
+        currentMovement = Vector2.zero;
+        rb.linearVelocity = Vector2.zero; // Stop the physics body completely
+        return;
     }
+
+    // Calculate direction
+    Vector3 directionToTarget = (currentTargetWithJitter - transform.position).normalized;
+    currentMovement = new Vector2(directionToTarget.x, directionToTarget.y);
+
+    // THE FIX: Use Physics Velocity instead of transform.position! 
+    // This stops the physics engine from fighting the movement.
+    rb.linearVelocity = currentMovement * individualSpeed;
+
+    // Check if we reached the current node
+    if (Vector2.Distance(transform.position, currentTargetWithJitter) < 0.15f)
+    {
+        pathIndex++;
+        if (pathIndex < currentPath.Count) UpdateJitteredTarget();
+    }
+}
 
     void UpdateJitteredTarget()
     {
@@ -204,8 +207,6 @@ public class Enemy : MonoBehaviour
         float jitter = (currentDist > lockOnDistance) ? randomJitter : 0.05f;
         currentTargetWithJitter = rawCenter + new Vector3(Random.Range(-jitter, jitter), Random.Range(-jitter, jitter), 0);
     }
-
-    // --- Helper Methods ---
 
     void CreateGridFromTilemap()
     {
@@ -233,7 +234,6 @@ public class Enemy : MonoBehaviour
 
         if (Random.value < curiosity)
         {
-            // Shuffle
             for (int i = neighbors.Count - 1; i > 0; i--)
             {
                 int r = Random.Range(0, i + 1);
