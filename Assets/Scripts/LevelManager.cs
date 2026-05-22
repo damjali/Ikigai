@@ -20,9 +20,11 @@ public class LevelManager : MonoBehaviour
     public Transform bearExit;
     public int bearCount = 5;
     public int medicineCount = 3;
+    private int medicinesRemaining;
 
     void Start()
     {
+        medicinesRemaining = medicineCount;
         foreach (Enemy e in enemies)
         {
             if (e != null)
@@ -208,4 +210,27 @@ public class LevelManager : MonoBehaviour
         canvas.TriggerPopup();
         Instantiate(secretDoor, new Vector2((float)-10.48, (float)-27.7), Quaternion.identity);
     }
+
+    public void StunEnemies(float duration)
+    {
+        foreach (Enemy e in enemies)
+        {
+            if (e != null) e.Stun(duration);
+        }
+    }
+
+    // public void MedicineCollected()
+    // {
+    //     medicinesRemaining--;
+    //     if (medicinesRemaining <= 0)
+    //     {
+    //         // Check if secret door exists (game hasn't ended/reached exit yet)
+    //         GameObject door = GameObject.Find("Secret Door(Clone)");
+    //         if (door == null)
+    //         {
+    //             Debug.Log("No more medicine and exit not spawned. Game Over.");
+    //             UnityEngine.SceneManagement.SceneManager.LoadScene("Died Page");
+    //         }
+    //     }
+    // }
 }
