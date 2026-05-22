@@ -16,19 +16,30 @@ public class Enemy : MonoBehaviour
     [Header("Movement")]
     public float speed = 3f;
     public float pathUpdateRate = 0.1f;
+    public float rotationSpeed = 10f;
 
     [Header("Behavior Settings")]
-    public float lockOnDistance = 3f;
-    public int targetSpread = 2;
-    [Range(0f, 0.4f)] public float randomJitter = 0.25f;
+    public float lockOnDistance = 5f;
+    public int targetSpread = 1;
+    [Range(0f, 0.4f)] public float randomJitter = 0.1f;
 
     [Header("Intelligence Settings")]
     [Range(0f, 1f)]
-    public float curiosity = 0.3f;
+    public float curiosity = 0.1f; // Reduced for "smarter" behavior
+
+    [Header("Stuck Detection")]
+    public float stuckCheckInterval = 0.5f;
+    public float stuckThreshold = 0.05f;
+    public float recoveryDuration = 0.8f;
+    private float stuckTimer;
+    private Vector2 lastPosition;
+    private bool isRecovering;
+    private float recoveryTimer;
+    private Vector2 recoveryDir;
 
     [Header("Audio Settings (The Heartbeat)")]
-    public float heartbeatDistance = 8f; // How close before the heartbeat starts
-    private float heartbeatTimer; // Now used as a pure 3-second cooldown
+    public float heartbeatDistance = 8f; 
+    private float heartbeatTimer;
 
     [Header("Spawn Settings")]
     private float originX;
@@ -55,14 +66,13 @@ public class Enemy : MonoBehaviour
     {
         if (wallTilemap != null) CreateGridFromTilemap();
 
-        individualSpeed = speed + Random.Range(-0.5f, 0.5f);
+        individualSpeed = speed + Random.Range(-0.2f, 0.2f);
+        lastPosition = transform.position;
 
-        // Save origin position if not already set
         if (!originSaved)
         {
-            Vector2Int startGrid = WorldToGrid(transform.position);
-            originX = startGrid.x;
-            originY = startGrid.y;
+            originX = transform.position.x;
+            originY = transform.position.y;
             originSaved = true;
         }
     }
@@ -71,45 +81,110 @@ public class Enemy : MonoBehaviour
     {
         if (player == null || grid == null) return;
 
-        // --- THE TENSION BUILDER (HEARTBEAT LOGIC) ---
+        HandleHeartbeat();
+        HandleStuckDetection();
+
+        if (isRecovering)
+        {
+            PerformRecovery();
+        }
+        else
+        {
+            timer -= Time.deltaTime;
+            if (timer <= 0)
+            {
+                GeneratePath();
+                timer = pathUpdateRate;
+            }
+            FollowPath();
+        }
+
+        UpdateAnimations();
+    }
+
+    void HandleHeartbeat()
+    {
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
         
         if (distanceToPlayer <= heartbeatDistance)
         {
             heartbeatTimer -= Time.deltaTime;
-            
             if (heartbeatTimer <= 0)
             {
-                // Play the sound (AudioManager will block it if it's already playing!)
-                AudioManager.instance.PlayHeartbeat();
-                
-                // Wait exactly 3 seconds before checking again
+                if (AudioManager.instance != null)
+                    AudioManager.instance.PlayHeartbeat();
                 heartbeatTimer = 3f; 
             }
         }
         else
         {
-            // Reset the timer when player escapes so it triggers immediately next time
             heartbeatTimer = 0f;
         }
-        // ---------------------------------------------
+    }
 
-        timer -= Time.deltaTime;
-        if (timer <= 0)
+    void HandleStuckDetection()
+    {
+        if (isRecovering) return;
+
+        stuckTimer += Time.deltaTime;
+        if (stuckTimer >= stuckCheckInterval)
         {
-            GeneratePath();
-            timer = pathUpdateRate + Random.Range(-0.05f, 0.05f);
+            float distMoved = Vector2.Distance(transform.position, lastPosition);
+            if (distMoved < stuckThreshold && currentMovement.sqrMagnitude > 0.1f)
+            {
+                StartRecovery();
+            }
+            lastPosition = transform.position;
+            stuckTimer = 0;
         }
+    }
 
-        FollowPath();
-        UpdateAnimations();
+    void StartRecovery()
+    {
+        isRecovering = true;
+        recoveryTimer = recoveryDuration;
+        
+        // Try to move in a direction that isn't blocked
+        Vector2[] dirs = { Vector2.up, Vector2.down, Vector2.left, Vector2.right, 
+                           (Vector2.up + Vector2.right).normalized, (Vector2.up + Vector2.left).normalized,
+                           (Vector2.down + Vector2.right).normalized, (Vector2.down + Vector2.left).normalized };
+        
+        // Pick a random direction first, then refine if needed
+        recoveryDir = dirs[Random.Range(0, dirs.Length)];
+        
+        // Find a walkable neighbor to move towards
+        Vector2Int currentGrid = WorldToGrid(transform.position);
+        foreach(var dir in dirs)
+        {
+            Vector2Int neighbor = currentGrid + new Vector2Int(Mathf.RoundToInt(dir.x), Mathf.RoundToInt(dir.y));
+            if (IsValidGridPos(neighbor) && grid[neighbor.x, neighbor.y])
+            {
+                recoveryDir = dir;
+                break;
+            }
+        }
+        
+        currentPath.Clear();
+    }
+
+    void PerformRecovery()
+    {
+        recoveryTimer -= Time.deltaTime;
+        rb.linearVelocity = recoveryDir * individualSpeed;
+        currentMovement = recoveryDir;
+
+        if (recoveryTimer <= 0)
+        {
+            isRecovering = false;
+            GeneratePath();
+        }
     }
 
     void UpdateAnimations()
     {
         if (anim != null)
         {
-            bool isMoving = currentMovement.sqrMagnitude > 0;
+            bool isMoving = rb.linearVelocity.sqrMagnitude > 0.01f;
             anim.SetBool("IsMoving", isMoving);
 
             if (isMoving)
@@ -120,13 +195,30 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    bool HasLineOfSight()
+    {
+        Vector2 start = transform.position;
+        Vector2 end = player.position;
+        float dist = Vector2.Distance(start, end);
+        
+        int steps = Mathf.CeilToInt(dist * 3f);
+        for (int i = 1; i <= steps; i++)
+        {
+            Vector2 point = Vector2.Lerp(start, end, (float)i / steps);
+            Vector2Int gPos = WorldToGrid(point);
+            if (!grid[gPos.x, gPos.y]) return false;
+        }
+        return true;
+    }
+
     void GeneratePath()
     {
         Vector2Int start = WorldToGrid(transform.position);
         Vector2Int playerGridPos = WorldToGrid(player.position);
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-        Vector2Int finalTarget = (distanceToPlayer <= lockOnDistance)
+        // If we have LoS, we don't need a complex path, just go to the player's grid pos
+        Vector2Int finalTarget = (distanceToPlayer <= lockOnDistance || HasLineOfSight())
             ? playerGridPos
             : GetRandomizedTarget(playerGridPos);
 
@@ -134,38 +226,52 @@ public class Enemy : MonoBehaviour
         {
             currentPath.Clear();
             currentMovement = Vector2.zero;
+            rb.linearVelocity = Vector2.zero;
             return;
         }
 
-        Queue<Vector2Int> queue = new Queue<Vector2Int>();
-        queue.Enqueue(start);
-        Dictionary<Vector2Int, Vector2Int> parentMap = new Dictionary<Vector2Int, Vector2Int>();
-        parentMap[start] = start;
+        // --- A* Pathfinding ---
+        PriorityQueue<Node> openSet = new PriorityQueue<Node>();
+        Dictionary<Vector2Int, Node> allNodes = new Dictionary<Vector2Int, Node>();
 
-        while (queue.Count > 0)
+        Node startNode = new Node(start, 0, GetHeuristic(start, finalTarget), null);
+        openSet.Enqueue(startNode);
+        allNodes[start] = startNode;
+
+        Node endNode = null;
+
+        while (openSet.Count > 0)
         {
-            Vector2Int curr = queue.Dequeue();
-            if (curr == finalTarget) break;
+            Node curr = openSet.Dequeue();
 
-            foreach (Vector2Int neighbor in GetSmartNeighbors(curr, finalTarget))
+            if (curr.pos == finalTarget)
             {
-                if (grid[neighbor.x, neighbor.y] && !parentMap.ContainsKey(neighbor))
+                endNode = curr;
+                break;
+            }
+
+            foreach (Vector2Int neighborPos in GetNeighbors(curr.pos))
+            {
+                if (!grid[neighborPos.x, neighborPos.y]) continue;
+
+                float newG = curr.g + 1; // Basic grid distance
+                if (!allNodes.ContainsKey(neighborPos) || newG < allNodes[neighborPos].g)
                 {
-                    queue.Enqueue(neighbor);
-                    parentMap[neighbor] = curr;
+                    Node neighborNode = new Node(neighborPos, newG, GetHeuristic(neighborPos, finalTarget), curr);
+                    allNodes[neighborPos] = neighborNode;
+                    openSet.Enqueue(neighborNode);
                 }
             }
         }
 
-        if (!parentMap.ContainsKey(finalTarget)) return;
+        if (endNode == null) return;
 
         currentPath.Clear();
-        Vector2Int temp = finalTarget;
-
-        while (temp != start)
+        Node temp = endNode;
+        while (temp != null && temp.pos != start)
         {
-            currentPath.Add(temp);
-            temp = parentMap[temp];
+            currentPath.Add(temp.pos);
+            temp = temp.parent;
         }
         currentPath.Reverse();
 
@@ -173,30 +279,61 @@ public class Enemy : MonoBehaviour
         if (currentPath.Count > 0) UpdateJitteredTarget();
     }
 
+    float GetHeuristic(Vector2Int a, Vector2Int b)
+    {
+        return Mathf.Abs(a.x - b.x) + Mathf.Abs(a.y - b.y); // Manhattan distance
+    }
+
     void FollowPath()
-{
-    if (currentPath == null || currentPath.Count == 0 || pathIndex >= currentPath.Count)
     {
-        currentMovement = Vector2.zero;
-        rb.linearVelocity = Vector2.zero; // Stop the physics body completely
-        return;
+        if (currentPath == null || currentPath.Count == 0 || pathIndex >= currentPath.Count)
+        {
+            if (Vector2.Distance(transform.position, player.position) > 0.5f)
+            {
+                // If path is empty but we aren't at player, try moving directly if LoS
+                if (HasLineOfSight())
+                {
+                    Vector2 dir = (player.position - transform.position).normalized;
+                    currentMovement = dir;
+                    rb.linearVelocity = dir * individualSpeed;
+                }
+            }
+            else
+            {
+                currentMovement = Vector2.zero;
+                rb.linearVelocity = Vector2.zero;
+            }
+            return;
+        }
+
+        // Smooth pathing: Look ahead to see if we can skip nodes
+        while (pathIndex + 1 < currentPath.Count)
+        {
+            Vector3 nextNodeWorld = GridToWorld(currentPath[pathIndex + 1]);
+            if (IsPointWalkable(nextNodeWorld))
+            {
+                pathIndex++;
+                UpdateJitteredTarget();
+            }
+            else break;
+        }
+
+        Vector3 directionToTarget = (currentTargetWithJitter - transform.position).normalized;
+        currentMovement = new Vector2(directionToTarget.x, directionToTarget.y);
+        rb.linearVelocity = currentMovement * individualSpeed;
+
+        if (Vector2.Distance(transform.position, currentTargetWithJitter) < 0.2f)
+        {
+            pathIndex++;
+            if (pathIndex < currentPath.Count) UpdateJitteredTarget();
+        }
     }
 
-    // Calculate direction
-    Vector3 directionToTarget = (currentTargetWithJitter - transform.position).normalized;
-    currentMovement = new Vector2(directionToTarget.x, directionToTarget.y);
-
-    // THE FIX: Use Physics Velocity instead of transform.position! 
-    // This stops the physics engine from fighting the movement.
-    rb.linearVelocity = currentMovement * individualSpeed;
-
-    // Check if we reached the current node
-    if (Vector2.Distance(transform.position, currentTargetWithJitter) < 0.15f)
+    bool IsPointWalkable(Vector3 worldPos)
     {
-        pathIndex++;
-        if (pathIndex < currentPath.Count) UpdateJitteredTarget();
+        Vector2Int gPos = WorldToGrid(worldPos);
+        return IsValidGridPos(gPos) && grid[gPos.x, gPos.y];
     }
-}
 
     void UpdateJitteredTarget()
     {
@@ -204,7 +341,9 @@ public class Enemy : MonoBehaviour
 
         Vector3 rawCenter = GridToWorld(currentPath[pathIndex]);
         float currentDist = Vector2.Distance(transform.position, player.position);
-        float jitter = (currentDist > lockOnDistance) ? randomJitter : 0.05f;
+        
+        // Less jitter when close or chasing
+        float jitter = (currentDist > lockOnDistance && !HasLineOfSight()) ? randomJitter : 0.02f;
         currentTargetWithJitter = rawCenter + new Vector3(Random.Range(-jitter, jitter), Random.Range(-jitter, jitter), 0);
     }
 
@@ -224,39 +363,33 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    IEnumerable<Vector2Int> GetSmartNeighbors(Vector2Int current, Vector2Int target)
+    IEnumerable<Vector2Int> GetNeighbors(Vector2Int current)
     {
-        List<Vector2Int> neighbors = new List<Vector2Int>
-        {
+        Vector2Int[] neighbors = {
             current + Vector2Int.up, current + Vector2Int.down,
             current + Vector2Int.left, current + Vector2Int.right
         };
 
-        if (Random.value < curiosity)
-        {
-            for (int i = neighbors.Count - 1; i > 0; i--)
-            {
-                int r = Random.Range(0, i + 1);
-                var t = neighbors[i]; neighbors[i] = neighbors[r]; neighbors[r] = t;
-            }
-        }
-        else
-        {
-            neighbors = neighbors.OrderBy(n => Vector2Int.Distance(n, target)).ToList();
-        }
-
         foreach (var n in neighbors)
         {
-            if (n.x >= 0 && n.x < grid.GetLength(0) && n.y >= 0 && n.y < grid.GetLength(1))
+            if (IsValidGridPos(n))
                 yield return n;
         }
     }
 
+    bool IsValidGridPos(Vector2Int pos)
+    {
+        return pos.x >= 0 && pos.x < grid.GetLength(0) && pos.y >= 0 && pos.y < grid.GetLength(1);
+    }
+
     Vector2Int GetRandomizedTarget(Vector2Int baseTarget)
     {
-        Vector2Int pot = baseTarget + new Vector2Int(Random.Range(-targetSpread, targetSpread + 1), Random.Range(-targetSpread, targetSpread + 1));
-        if (pot.x >= 0 && pot.x < grid.GetLength(0) && pot.y >= 0 && pot.y < grid.GetLength(1) && grid[pot.x, pot.y])
-            return pot;
+        if (Random.value < curiosity)
+        {
+            Vector2Int pot = baseTarget + new Vector2Int(Random.Range(-targetSpread, targetSpread + 1), Random.Range(-targetSpread, targetSpread + 1));
+            if (IsValidGridPos(pot) && grid[pot.x, pot.y])
+                return pot;
+        }
         return baseTarget;
     }
 
@@ -282,6 +415,7 @@ public class Enemy : MonoBehaviour
             rb.position = worldSpawn;
         }
         transform.position = worldSpawn;
+        isRecovering = false;
         clearPath();
     }
 
@@ -290,5 +424,57 @@ public class Enemy : MonoBehaviour
         currentPath.Clear();
         pathIndex = 0;
         timer = 0;
+    }
+
+    // --- Helper Classes for A* ---
+    private class Node
+    {
+        public Vector2Int pos;
+        public float g;
+        public float h;
+        public float f => g + h;
+        public Node parent;
+        public Node(Vector2Int p, float gScore, float hScore, Node prnt)
+        {
+            pos = p; g = gScore; h = hScore; parent = prnt;
+        }
+    }
+
+    private class PriorityQueue<T> where T : Node
+    {
+        private List<T> data = new List<T>();
+        public int Count => data.Count;
+        public void Enqueue(T item)
+        {
+            data.Add(item);
+            int ci = data.Count - 1;
+            while (ci > 0)
+            {
+                int pi = (ci - 1) / 2;
+                if (data[ci].f >= data[pi].f) break;
+                T tmp = data[ci]; data[ci] = data[pi]; data[pi] = tmp;
+                ci = pi;
+            }
+        }
+        public T Dequeue()
+        {
+            int li = data.Count - 1;
+            T frontItem = data[0];
+            data[0] = data[li];
+            data.RemoveAt(li);
+            --li;
+            int pi = 0;
+            while (true)
+            {
+                int ci = pi * 2 + 1;
+                if (ci > li) break;
+                int rc = ci + 1;
+                if (rc <= li && data[rc].f < data[ci].f) ci = rc;
+                if (data[pi].f <= data[ci].f) break;
+                T tmp = data[pi]; data[pi] = data[ci]; data[ci] = tmp;
+                pi = ci;
+            }
+            return frontItem;
+        }
     }
 }
