@@ -1,21 +1,21 @@
-    using UnityEngine;
-    using UnityEngine.Tilemaps;
-    using System.Collections.Generic;
-    using System.Linq;
+using UnityEngine;
+using UnityEngine.Tilemaps;
+using System.Collections.Generic;
+using System.Linq;
 
-    [RequireComponent(typeof(Rigidbody2D))]
-    [RequireComponent(typeof(Animator))]
-    public class Enemy : MonoBehaviour
-    {
-        [Header("References")]
-        public Tilemap wallTilemap;
-        public Transform player;
-        private Animator anim;
-        private Rigidbody2D rb;
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Animator))]
+public class Enemy : MonoBehaviour
+{
+    [Header("References")]
+    public Tilemap wallTilemap;
+    public Transform player;
+    private Animator anim;
+    private Rigidbody2D rb;
 
     [Header("Movement")]
     public float speed = 3f;
-    public float pathUpdateRate = 0.1f;
+    public float pathUpdateRate = 0.15f;
     public float rotationSpeed = 10f;
 
     [Header("Behavior Settings")]
@@ -25,7 +25,7 @@
 
     [Header("Intelligence Settings")]
     [Range(0f, 1f)]
-    public float curiosity = 0.1f; // Reduced for "smarter" behavior
+    public float curiosity = 0.1f; 
 
     [Header("Stuck Detection")]
     public float stuckCheckInterval = 0.5f;
@@ -41,30 +41,30 @@
     public float heartbeatDistance = 8f; 
     private float heartbeatTimer;
 
-        [Header("Spawn Settings")]
-        private float originX;
-        private float originY;
-        private bool originSaved = false;
+    [Header("Spawn Settings")]
+    private float originX;
+    private float originY;
+    private bool originSaved = false;
 
-        // Pathfinding & Movement State
-        private Vector3 currentTargetWithJitter;
-        private Vector2 currentMovement;
-        private bool[,] grid;
-        private Vector2Int gridOffset;
-        private List<Vector2Int> currentPath = new List<Vector2Int>();
-        private int pathIndex;
-        private float timer;
-        private float individualSpeed;
+    // Pathfinding & Movement State
+    private Vector3 currentTargetWithJitter;
+    private Vector2 currentMovement;
+    private bool[,] grid;
+    private Vector2Int gridOffset;
+    private List<Vector2Int> currentPath = new List<Vector2Int>();
+    private int pathIndex;
+    private float timer;
+    private float individualSpeed;
 
-        void Awake()
-        {
-            rb = GetComponent<Rigidbody2D>();
-            anim = GetComponent<Animator>();
-        }
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+    }
 
-        void Start()
-        {
-            if (wallTilemap != null) CreateGridFromTilemap();
+    void Start()
+    {
+        if (wallTilemap != null) CreateGridFromTilemap();
 
         individualSpeed = speed + Random.Range(-0.2f, 0.2f);
         lastPosition = transform.position;
@@ -77,9 +77,9 @@
         }
     }
 
-        void Update()
-        {
-            if (player == null || grid == null) return;
+    void Update()
+    {
+        if (player == null || grid == null) return;
 
         HandleHeartbeat();
         HandleStuckDetection();
@@ -144,15 +144,12 @@
         isRecovering = true;
         recoveryTimer = recoveryDuration;
         
-        // Try to move in a direction that isn't blocked
         Vector2[] dirs = { Vector2.up, Vector2.down, Vector2.left, Vector2.right, 
                            (Vector2.up + Vector2.right).normalized, (Vector2.up + Vector2.left).normalized,
                            (Vector2.down + Vector2.right).normalized, (Vector2.down + Vector2.left).normalized };
         
-        // Pick a random direction first, then refine if needed
         recoveryDir = dirs[Random.Range(0, dirs.Length)];
         
-        // Find a walkable neighbor to move towards
         Vector2Int currentGrid = WorldToGrid(transform.position);
         foreach(var dir in dirs)
         {
@@ -195,30 +192,43 @@
         }
     }
 
-    bool HasLineOfSight()
+    bool HasLineOfSight(Vector2 targetPos)
     {
         Vector2 start = transform.position;
-        Vector2 end = player.position;
-        float dist = Vector2.Distance(start, end);
+        float dist = Vector2.Distance(start, targetPos);
         
-        int steps = Mathf.CeilToInt(dist * 3f);
+        // Granular check every 0.2 units
+        int steps = Mathf.CeilToInt(dist / 0.2f);
         for (int i = 1; i <= steps; i++)
         {
-            Vector2 point = Vector2.Lerp(start, end, (float)i / steps);
+            Vector2 point = Vector2.Lerp(start, targetPos, (float)i / steps);
             Vector2Int gPos = WorldToGrid(point);
-            if (!grid[gPos.x, gPos.y]) return false;
+            if (!IsValidGridPos(gPos) || !grid[gPos.x, gPos.y]) return false;
         }
         return true;
     }
 
-        void GeneratePath()
+    bool IsPathClear(Vector2 start, Vector2 end)
+    {
+        float dist = Vector2.Distance(start, end);
+        int steps = Mathf.CeilToInt(dist / 0.2f);
+        for (int i = 1; i <= steps; i++)
         {
-            Vector2Int start = WorldToGrid(transform.position);
-            Vector2Int playerGridPos = WorldToGrid(player.position);
-            float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+            Vector2 point = Vector2.Lerp(start, end, (float)i / steps);
+            Vector2Int gPos = WorldToGrid(point);
+            if (!IsValidGridPos(gPos) || !grid[gPos.x, gPos.y]) return false;
+        }
+        return true;
+    }
+
+    void GeneratePath()
+    {
+        Vector2Int start = WorldToGrid(transform.position);
+        Vector2Int playerGridPos = WorldToGrid(player.position);
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
         // If we have LoS, we don't need a complex path, just go to the player's grid pos
-        Vector2Int finalTarget = (distanceToPlayer <= lockOnDistance || HasLineOfSight())
+        Vector2Int finalTarget = (distanceToPlayer <= lockOnDistance || HasLineOfSight(player.position))
             ? playerGridPos
             : GetRandomizedTarget(playerGridPos);
 
@@ -254,7 +264,7 @@
             {
                 if (!grid[neighborPos.x, neighborPos.y]) continue;
 
-                float newG = curr.g + 1; // Basic grid distance
+                float newG = curr.g + 1;
                 if (!allNodes.ContainsKey(neighborPos) || newG < allNodes[neighborPos].g)
                 {
                     Node neighborNode = new Node(neighborPos, newG, GetHeuristic(neighborPos, finalTarget), curr);
@@ -281,7 +291,7 @@
 
     float GetHeuristic(Vector2Int a, Vector2Int b)
     {
-        return Mathf.Abs(a.x - b.x) + Mathf.Abs(a.y - b.y); // Manhattan distance
+        return Mathf.Abs(a.x - b.x) + Mathf.Abs(a.y - b.y);
     }
 
     void FollowPath()
@@ -290,8 +300,7 @@
         {
             if (Vector2.Distance(transform.position, player.position) > 0.5f)
             {
-                // If path is empty but we aren't at player, try moving directly if LoS
-                if (HasLineOfSight())
+                if (HasLineOfSight(player.position))
                 {
                     Vector2 dir = (player.position - transform.position).normalized;
                     currentMovement = dir;
@@ -306,11 +315,11 @@
             return;
         }
 
-        // Smooth pathing: Look ahead to see if we can skip nodes
+        // Smooth pathing: ONLY skip nodes if the entire PATH to the next node is clear
         while (pathIndex + 1 < currentPath.Count)
         {
             Vector3 nextNodeWorld = GridToWorld(currentPath[pathIndex + 1]);
-            if (IsPointWalkable(nextNodeWorld))
+            if (IsPathClear(transform.position, nextNodeWorld))
             {
                 pathIndex++;
                 UpdateJitteredTarget();
@@ -329,39 +338,39 @@
         }
     }
 
-    bool IsPointWalkable(Vector3 worldPos)
+    void UpdateJitteredTarget()
     {
-        Vector2Int gPos = WorldToGrid(worldPos);
-        return IsValidGridPos(gPos) && grid[gPos.x, gPos.y];
-    }
-
-        void UpdateJitteredTarget()
-        {
-            if (currentPath.Count == 0 || pathIndex >= currentPath.Count) return;
+        if (currentPath.Count == 0 || pathIndex >= currentPath.Count) return;
 
         Vector3 rawCenter = GridToWorld(currentPath[pathIndex]);
         float currentDist = Vector2.Distance(transform.position, player.position);
         
-        // Less jitter when close or chasing
-        float jitter = (currentDist > lockOnDistance && !HasLineOfSight()) ? randomJitter : 0.02f;
+        float jitter = (currentDist > lockOnDistance && !HasLineOfSight(player.position)) ? randomJitter : 0.02f;
         currentTargetWithJitter = rawCenter + new Vector3(Random.Range(-jitter, jitter), Random.Range(-jitter, jitter), 0);
+        
+        // Ensure jittered target isn't inside a wall
+        Vector2Int gPos = WorldToGrid(currentTargetWithJitter);
+        if (!IsValidGridPos(gPos) || !grid[gPos.x, gPos.y])
+        {
+            currentTargetWithJitter = rawCenter;
+        }
     }
 
-        void CreateGridFromTilemap()
-        {
-            BoundsInt bounds = wallTilemap.cellBounds;
-            grid = new bool[bounds.size.x, bounds.size.y];
-            gridOffset = new Vector2Int(bounds.xMin, bounds.yMin);
+    void CreateGridFromTilemap()
+    {
+        BoundsInt bounds = wallTilemap.cellBounds;
+        grid = new bool[bounds.size.x, bounds.size.y];
+        gridOffset = new Vector2Int(bounds.xMin, bounds.yMin);
 
-            for (int x = 0; x < bounds.size.x; x++)
+        for (int x = 0; x < bounds.size.x; x++)
+        {
+            for (int y = 0; y < bounds.size.y; y++)
             {
-                for (int y = 0; y < bounds.size.y; y++)
-                {
-                    Vector3Int localAddr = new Vector3Int(x + gridOffset.x, y + gridOffset.y, 0);
-                    grid[x, y] = !wallTilemap.HasTile(localAddr);
-                }
+                Vector3Int localAddr = new Vector3Int(x + gridOffset.x, y + gridOffset.y, 0);
+                grid[x, y] = !wallTilemap.HasTile(localAddr);
             }
         }
+    }
 
     IEnumerable<Vector2Int> GetNeighbors(Vector2Int current)
     {
@@ -393,17 +402,17 @@
         return baseTarget;
     }
 
-        Vector2Int WorldToGrid(Vector3 worldPos)
-        {
-            Vector3Int cell = wallTilemap.WorldToCell(worldPos);
-            return new Vector2Int(Mathf.Clamp(cell.x - gridOffset.x, 0, grid.GetLength(0) - 1), Mathf.Clamp(cell.y - gridOffset.y, 0, grid.GetLength(1) - 1));
-        }
+    Vector2Int WorldToGrid(Vector3 worldPos)
+    {
+        Vector3Int cell = wallTilemap.WorldToCell(worldPos);
+        return new Vector2Int(Mathf.Clamp(cell.x - gridOffset.x, 0, grid.GetLength(0) - 1), Mathf.Clamp(cell.y - gridOffset.y, 0, grid.GetLength(1) - 1));
+    }
 
-        Vector3 GridToWorld(Vector2Int gridPos)
-        {
-            Vector3Int cell = new Vector3Int(gridPos.x + gridOffset.x, gridPos.y + gridOffset.y, 0);
-            return wallTilemap.GetCellCenterWorld(cell);
-        }
+    Vector3 GridToWorld(Vector2Int gridPos)
+    {
+        Vector3Int cell = new Vector3Int(gridPos.x + gridOffset.x, gridPos.y + gridOffset.y, 0);
+        return wallTilemap.GetCellCenterWorld(cell);
+    }
 
     public void reset()
     {
@@ -426,7 +435,6 @@
         timer = 0;
     }
 
-    // --- Helper Classes for A* ---
     private class Node
     {
         public Vector2Int pos;

@@ -375,7 +375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   wallTilemap: {fileID: 0}
   player: {fileID: 0}
-  speed: 4
+  speed: 2.5
   pathUpdateRate: 0.1
   rotationSpeed: 10
   lockOnDistance: 3
