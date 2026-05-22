@@ -1,17 +1,17 @@
-using UnityEngine;
-using UnityEngine.Tilemaps;
-using System.Collections.Generic;
-using System.Linq;
+    using UnityEngine;
+    using UnityEngine.Tilemaps;
+    using System.Collections.Generic;
+    using System.Linq;
 
-[RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(Animator))]
-public class Enemy : MonoBehaviour
-{
-    [Header("References")]
-    public Tilemap wallTilemap;
-    public Transform player;
-    private Animator anim;
-    private Rigidbody2D rb;
+    [RequireComponent(typeof(Rigidbody2D))]
+    [RequireComponent(typeof(Animator))]
+    public class Enemy : MonoBehaviour
+    {
+        [Header("References")]
+        public Tilemap wallTilemap;
+        public Transform player;
+        private Animator anim;
+        private Rigidbody2D rb;
 
     [Header("Movement")]
     public float speed = 3f;
@@ -41,30 +41,30 @@ public class Enemy : MonoBehaviour
     public float heartbeatDistance = 8f; 
     private float heartbeatTimer;
 
-    [Header("Spawn Settings")]
-    private float originX;
-    private float originY;
-    private bool originSaved = false;
+        [Header("Spawn Settings")]
+        private float originX;
+        private float originY;
+        private bool originSaved = false;
 
-    // Pathfinding & Movement State
-    private Vector3 currentTargetWithJitter;
-    private Vector2 currentMovement;
-    private bool[,] grid;
-    private Vector2Int gridOffset;
-    private List<Vector2Int> currentPath = new List<Vector2Int>();
-    private int pathIndex;
-    private float timer;
-    private float individualSpeed;
+        // Pathfinding & Movement State
+        private Vector3 currentTargetWithJitter;
+        private Vector2 currentMovement;
+        private bool[,] grid;
+        private Vector2Int gridOffset;
+        private List<Vector2Int> currentPath = new List<Vector2Int>();
+        private int pathIndex;
+        private float timer;
+        private float individualSpeed;
 
-    void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
-    }
+        void Awake()
+        {
+            rb = GetComponent<Rigidbody2D>();
+            anim = GetComponent<Animator>();
+        }
 
-    void Start()
-    {
-        if (wallTilemap != null) CreateGridFromTilemap();
+        void Start()
+        {
+            if (wallTilemap != null) CreateGridFromTilemap();
 
         individualSpeed = speed + Random.Range(-0.2f, 0.2f);
         lastPosition = transform.position;
@@ -77,9 +77,9 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        if (player == null || grid == null) return;
+        void Update()
+        {
+            if (player == null || grid == null) return;
 
         HandleHeartbeat();
         HandleStuckDetection();
@@ -211,11 +211,11 @@ public class Enemy : MonoBehaviour
         return true;
     }
 
-    void GeneratePath()
-    {
-        Vector2Int start = WorldToGrid(transform.position);
-        Vector2Int playerGridPos = WorldToGrid(player.position);
-        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+        void GeneratePath()
+        {
+            Vector2Int start = WorldToGrid(transform.position);
+            Vector2Int playerGridPos = WorldToGrid(player.position);
+            float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
         // If we have LoS, we don't need a complex path, just go to the player's grid pos
         Vector2Int finalTarget = (distanceToPlayer <= lockOnDistance || HasLineOfSight())
@@ -335,9 +335,9 @@ public class Enemy : MonoBehaviour
         return IsValidGridPos(gPos) && grid[gPos.x, gPos.y];
     }
 
-    void UpdateJitteredTarget()
-    {
-        if (currentPath.Count == 0 || pathIndex >= currentPath.Count) return;
+        void UpdateJitteredTarget()
+        {
+            if (currentPath.Count == 0 || pathIndex >= currentPath.Count) return;
 
         Vector3 rawCenter = GridToWorld(currentPath[pathIndex]);
         float currentDist = Vector2.Distance(transform.position, player.position);
@@ -347,21 +347,21 @@ public class Enemy : MonoBehaviour
         currentTargetWithJitter = rawCenter + new Vector3(Random.Range(-jitter, jitter), Random.Range(-jitter, jitter), 0);
     }
 
-    void CreateGridFromTilemap()
-    {
-        BoundsInt bounds = wallTilemap.cellBounds;
-        grid = new bool[bounds.size.x, bounds.size.y];
-        gridOffset = new Vector2Int(bounds.xMin, bounds.yMin);
-
-        for (int x = 0; x < bounds.size.x; x++)
+        void CreateGridFromTilemap()
         {
-            for (int y = 0; y < bounds.size.y; y++)
+            BoundsInt bounds = wallTilemap.cellBounds;
+            grid = new bool[bounds.size.x, bounds.size.y];
+            gridOffset = new Vector2Int(bounds.xMin, bounds.yMin);
+
+            for (int x = 0; x < bounds.size.x; x++)
             {
-                Vector3Int localAddr = new Vector3Int(x + gridOffset.x, y + gridOffset.y, 0);
-                grid[x, y] = !wallTilemap.HasTile(localAddr);
+                for (int y = 0; y < bounds.size.y; y++)
+                {
+                    Vector3Int localAddr = new Vector3Int(x + gridOffset.x, y + gridOffset.y, 0);
+                    grid[x, y] = !wallTilemap.HasTile(localAddr);
+                }
             }
         }
-    }
 
     IEnumerable<Vector2Int> GetNeighbors(Vector2Int current)
     {
@@ -393,17 +393,17 @@ public class Enemy : MonoBehaviour
         return baseTarget;
     }
 
-    Vector2Int WorldToGrid(Vector3 worldPos)
-    {
-        Vector3Int cell = wallTilemap.WorldToCell(worldPos);
-        return new Vector2Int(Mathf.Clamp(cell.x - gridOffset.x, 0, grid.GetLength(0) - 1), Mathf.Clamp(cell.y - gridOffset.y, 0, grid.GetLength(1) - 1));
-    }
+        Vector2Int WorldToGrid(Vector3 worldPos)
+        {
+            Vector3Int cell = wallTilemap.WorldToCell(worldPos);
+            return new Vector2Int(Mathf.Clamp(cell.x - gridOffset.x, 0, grid.GetLength(0) - 1), Mathf.Clamp(cell.y - gridOffset.y, 0, grid.GetLength(1) - 1));
+        }
 
-    Vector3 GridToWorld(Vector2Int gridPos)
-    {
-        Vector3Int cell = new Vector3Int(gridPos.x + gridOffset.x, gridPos.y + gridOffset.y, 0);
-        return wallTilemap.GetCellCenterWorld(cell);
-    }
+        Vector3 GridToWorld(Vector2Int gridPos)
+        {
+            Vector3Int cell = new Vector3Int(gridPos.x + gridOffset.x, gridPos.y + gridOffset.y, 0);
+            return wallTilemap.GetCellCenterWorld(cell);
+        }
 
     public void reset()
     {
