@@ -1,0 +1,972 @@
+fileFormatVersion: 2
+guid: d993768f19ec98140923d819cc9587a3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1974192199623184264
+    second: HanyaWalkEast (2) - Copy_0
+  - first:
+      213: -9085856200272397477
+    second: HanyaWalkEast (2) - Copy_1
+  - first:
+      213: 1062228617242609068
+    second: HanyaWalkEast (2) - Copy_2
+  - first:
+      213: 1003683982478238110
+    second: HanyaWalkEast (2) - Copy_3
+  - first:
+      213: 6601113737951851138
+    second: HanyaWalkEast (2) - Copy_4
+  - first:
+      213: 5689771850547399716
+    second: HanyaWalkEast (2) - Copy_5
+  - first:
+      213: -3295446466990714129
+    second: HanyaWalkEast (2) - Copy_6
+  - first:
+      213: -1212946157877086736
+    second: HanyaWalkEast (2) - Copy_7
+  - first:
+      213: -7924688987143928275
+    second: HanyaWalkEast (2) - Copy_8
+  - first:
+      213: -5578445077512777148
+    second: HanyaWalkEast (2) - Copy_9
+  - first:
+      213: -3452183859592496088
+    second: HanyaWalkEast (2) - Copy_10
+  - first:
+      213: 7212543102109999769
+    second: HanyaWalkEast (2) - Copy_11
+  - first:
+      213: -4074026216627713454
+    second: HanyaWalkEast (2) - Copy_12
+  - first:
+      213: 2722368061280111980
+    second: HanyaWalkEast (2) - Copy_13
+  - first:
+      213: -7806730892840734806
+    second: HanyaWalkEast (2) - Copy_14
+  - first:
+      213: 8389481305803267082
+    second: HanyaWalkEast (2) - Copy_15
+  - first:
+      213: 6111545316754478156
+    second: HanyaWalkEast (2) - Copy_16
+  - first:
+      213: 160724765983266042
+    second: HanyaWalkEast (2) - Copy_17
+  - first:
+      213: 2598805491243850328
+    second: HanyaWalkEast (2) - Copy_18
+  - first:
+      213: 3816939694154472065
+    second: HanyaWalkEast (2) - Copy_19
+  - first:
+      213: 3029076044494757636
+    second: HanyaWalkEast (2) - Copy_20
+  - first:
+      213: -4002106946867684190
+    second: HanyaWalkEast (2) - Copy_21
+  - first:
+      213: -5431162106371756263
+    second: HanyaWalkEast (2) - Copy_22
+  - first:
+      213: -8640530160669671186
+    second: HanyaWalkEast (2) - Copy_23
+  - first:
+      213: 5655025323054047175
+    second: HanyaWalkEast (2) - Copy_24
+  - first:
+      213: -2403004280745598572
+    second: HanyaWalkEast (2) - Copy_25
+  - first:
+      213: 8518631552362490536
+    second: HanyaWalkEast (2) - Copy_26
+  - first:
+      213: 7932158084405929481
+    second: HanyaWalkEast (2) - Copy_27
+  - first:
+      213: 888454301307017055
+    second: HanyaWalkEast (2) - Copy_28
+  - first:
+      213: 3690527880102263419
+    second: HanyaWalkEast (2) - Copy_29
+  - first:
+      213: 6448670570716967788
+    second: HanyaWalkEast (2) - Copy_30
+  - first:
+      213: 2814416686516563354
+    second: HanyaWalkEast (2) - Copy_31
+  - first:
+      213: 8362446997589654150
+    second: HanyaWalkEast (2) - Copy_32
+  - first:
+      213: 6847984065616994829
+    second: HanyaWalkEast (2) - Copy_33
+  - first:
+      213: 2530680450780658897
+    second: HanyaWalkEast (2) - Copy_34
+  - first:
+      213: 3224230819769100848
+    second: HanyaWalkEast (2) - Copy_35
+  - first:
+      213: 249045570368747182
+    second: HanyaWalkEast (2) - Copy_36
+  - first:
+      213: -3580789919857327891
+    second: HanyaWalkEast (2) - Copy_37
+  - first:
+      213: -2625702281306726912
+    second: HanyaWalkEast (2) - Copy_38
+  - first:
+      213: -7619970338647033683
+    second: HanyaWalkEast (2) - Copy_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 295
+        width: 45
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 870fc1777a24a94e0800000000000000
+      internalID: -1974192199623184264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 296
+        width: 45
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5bbb7ebced88e180800000000000000
+      internalID: -9085856200272397477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_2
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 295
+        width: 45
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca50009ac4bcdbe00800000000000000
+      internalID: 1062228617242609068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_3
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 296
+        width: 45
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e916d5aa34dcded00800000000000000
+      internalID: 1003683982478238110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_4
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 295
+        width: 44
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 282329078fddb9b50800000000000000
+      internalID: 6601113737951851138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_5
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 296
+        width: 45
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42c05e43a5126fe40800000000000000
+      internalID: 5689771850547399716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_6
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 295
+        width: 45
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe2d3b6f5e83442d0800000000000000
+      internalID: -3295446466990714129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_7
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 296
+        width: 46
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f5bf0855efba2fe0800000000000000
+      internalID: -1212946157877086736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_8
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 224
+        width: 45
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2606dd5a59d50290800000000000000
+      internalID: -7924688987143928275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 226
+        width: 46
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44213d302c16592b0800000000000000
+      internalID: -5578445077512777148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_10
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 224
+        width: 44
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82cf6a5f1116710d0800000000000000
+      internalID: -3452183859592496088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_11
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 224
+        width: 44
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 992e578dcb9181460800000000000000
+      internalID: 7212543102109999769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_12
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 224
+        width: 44
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25ac648bdb62677c0800000000000000
+      internalID: -4074026216627713454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_13
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 226
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6d4878f35bc7c520800000000000000
+      internalID: 2722368061280111980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_14
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 224
+        width: 45
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aafe8236d9be8a390800000000000000
+      internalID: -7806730892840734806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_15
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 224
+        width: 45
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0c1f2a5ccc6d6470800000000000000
+      internalID: 8389481305803267082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_16
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 154
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c445ad1d51290d450800000000000000
+      internalID: 6111545316754478156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_17
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 156
+        width: 45
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af45a07b2520b3200800000000000000
+      internalID: 160724765983266042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_18
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 154
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85a9ce143dfc01420800000000000000
+      internalID: 2598805491243850328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_19
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 154
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18a5a27cd6e78f430800000000000000
+      internalID: 3816939694154472065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_20
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 154
+        width: 45
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40f51cd1d90790a20800000000000000
+      internalID: 3029076044494757636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_21
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 155
+        width: 45
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ac14d69fe8a578c0800000000000000
+      internalID: -4002106946867684190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_22
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 154
+        width: 43
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91f262cf6d2a0a4b0800000000000000
+      internalID: -5431162106371756263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_23
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 154
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee04c3e299ba61880800000000000000
+      internalID: -8640530160669671186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_33
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 15
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d02e2aab93de80f50800000000000000
+      internalID: 6847984065616994829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_34
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 14
+        width: 45
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dc7ecc3678ce1320800000000000000
+      internalID: 2530680450780658897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_35
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 14
+        width: 46
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03a243e09d4cebc20800000000000000
+      internalID: 3224230819769100848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_36
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 16
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea6b6b270a9c47300800000000000000
+      internalID: 249045570368747182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_37
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 15
+        width: 46
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de0ca9b2a8a7e4ec0800000000000000
+      internalID: -3580789919857327891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_38
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 14
+        width: 45
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00e97cccfa1af8bd0800000000000000
+      internalID: -2625702281306726912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkEast (2) - Copy_39
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 14
+        width: 45
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da83eed695d604690800000000000000
+      internalID: -7619970338647033683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 73ca151915cc2b64aa6bdf6ffa3bcbdc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HanyaWalkEast (2) - Copy_0: -1974192199623184264
+      HanyaWalkEast (2) - Copy_1: -9085856200272397477
+      HanyaWalkEast (2) - Copy_10: -3452183859592496088
+      HanyaWalkEast (2) - Copy_11: 7212543102109999769
+      HanyaWalkEast (2) - Copy_12: -4074026216627713454
+      HanyaWalkEast (2) - Copy_13: 2722368061280111980
+      HanyaWalkEast (2) - Copy_14: -7806730892840734806
+      HanyaWalkEast (2) - Copy_15: 8389481305803267082
+      HanyaWalkEast (2) - Copy_16: 6111545316754478156
+      HanyaWalkEast (2) - Copy_17: 160724765983266042
+      HanyaWalkEast (2) - Copy_18: 2598805491243850328
+      HanyaWalkEast (2) - Copy_19: 3816939694154472065
+      HanyaWalkEast (2) - Copy_2: 1062228617242609068
+      HanyaWalkEast (2) - Copy_20: 3029076044494757636
+      HanyaWalkEast (2) - Copy_21: -4002106946867684190
+      HanyaWalkEast (2) - Copy_22: -5431162106371756263
+      HanyaWalkEast (2) - Copy_23: -8640530160669671186
+      HanyaWalkEast (2) - Copy_24: 5655025323054047175
+      HanyaWalkEast (2) - Copy_25: -2403004280745598572
+      HanyaWalkEast (2) - Copy_26: 8518631552362490536
+      HanyaWalkEast (2) - Copy_27: 7932158084405929481
+      HanyaWalkEast (2) - Copy_28: 888454301307017055
+      HanyaWalkEast (2) - Copy_29: 3690527880102263419
+      HanyaWalkEast (2) - Copy_3: 1003683982478238110
+      HanyaWalkEast (2) - Copy_30: 6448670570716967788
+      HanyaWalkEast (2) - Copy_31: 2814416686516563354
+      HanyaWalkEast (2) - Copy_32: 8362446997589654150
+      HanyaWalkEast (2) - Copy_33: 6847984065616994829
+      HanyaWalkEast (2) - Copy_34: 2530680450780658897
+      HanyaWalkEast (2) - Copy_35: 3224230819769100848
+      HanyaWalkEast (2) - Copy_36: 249045570368747182
+      HanyaWalkEast (2) - Copy_37: -3580789919857327891
+      HanyaWalkEast (2) - Copy_38: -2625702281306726912
+      HanyaWalkEast (2) - Copy_39: -7619970338647033683
+      HanyaWalkEast (2) - Copy_4: 6601113737951851138
+      HanyaWalkEast (2) - Copy_5: 5689771850547399716
+      HanyaWalkEast (2) - Copy_6: -3295446466990714129
+      HanyaWalkEast (2) - Copy_7: -1212946157877086736
+      HanyaWalkEast (2) - Copy_8: -7924688987143928275
+      HanyaWalkEast (2) - Copy_9: -5578445077512777148
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

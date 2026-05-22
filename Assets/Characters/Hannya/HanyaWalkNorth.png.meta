@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: 7bbe8ae3ae6746546aa9a79b8a8a80a6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4443779948814539338
+    second: HanyaWalkNorth_0
+  - first:
+      213: 1776351371998279309
+    second: HanyaWalkNorth_1
+  - first:
+      213: -261232105450191094
+    second: HanyaWalkNorth_2
+  - first:
+      213: 1274067873730313383
+    second: HanyaWalkNorth_3
+  - first:
+      213: -2588929717009576844
+    second: HanyaWalkNorth_4
+  - first:
+      213: -7451173964923219360
+    second: HanyaWalkNorth_5
+  - first:
+      213: 881739594610005310
+    second: HanyaWalkNorth_6
+  - first:
+      213: 3717495278732412683
+    second: HanyaWalkNorth_7
+  - first:
+      213: 3356792646066226756
+    second: HanyaWalkNorth_8
+  - first:
+      213: -8611589182052885938
+    second: HanyaWalkNorth_9
+  - first:
+      213: -2930317691789904589
+    second: HanyaWalkNorth_10
+  - first:
+      213: -2029577247703251077
+    second: HanyaWalkNorth_11
+  - first:
+      213: 8376487327622653502
+    second: HanyaWalkNorth_12
+  - first:
+      213: -5605566842207075320
+    second: HanyaWalkNorth_13
+  - first:
+      213: -6151417152111766480
+    second: HanyaWalkNorth_14
+  - first:
+      213: -6909448762689652995
+    second: HanyaWalkNorth_15
+  - first:
+      213: 402609594674222620
+    second: HanyaWalkNorth_16
+  - first:
+      213: -5161840974776988007
+    second: HanyaWalkNorth_17
+  - first:
+      213: 2493900351479626935
+    second: HanyaWalkNorth_18
+  - first:
+      213: -4340345327764554540
+    second: HanyaWalkNorth_19
+  - first:
+      213: 4403036961927595496
+    second: HanyaWalkNorth_20
+  - first:
+      213: 8470598891897660696
+    second: HanyaWalkNorth_21
+  - first:
+      213: -2289440012470700396
+    second: HanyaWalkNorth_22
+  - first:
+      213: -5978670970362693170
+    second: HanyaWalkNorth_23
+  - first:
+      213: -8877065139099709663
+    second: HanyaWalkNorth_24
+  - first:
+      213: -7466724746197811856
+    second: HanyaWalkNorth_25
+  - first:
+      213: 1864387512268202439
+    second: HanyaWalkNorth_26
+  - first:
+      213: -3858763585152570242
+    second: HanyaWalkNorth_27
+  - first:
+      213: -7255365920233218581
+    second: HanyaWalkNorth_28
+  - first:
+      213: 3903508121661501553
+    second: HanyaWalkNorth_29
+  - first:
+      213: 3459519462803751439
+    second: HanyaWalkNorth_30
+  - first:
+      213: -8708853389891442993
+    second: HanyaWalkNorth_31
+  - first:
+      213: 3624546327116878758
+    second: HanyaWalkNorth_32
+  - first:
+      213: 4600584677784714873
+    second: HanyaWalkNorth_33
+  - first:
+      213: -7979766177296980831
+    second: HanyaWalkNorth_34
+  - first:
+      213: -7643894906421178004
+    second: HanyaWalkNorth_35
+  - first:
+      213: -7108561375837563875
+    second: HanyaWalkNorth_36
+  - first:
+      213: 1741690583671602894
+    second: HanyaWalkNorth_37
+  - first:
+      213: 7691151810955996870
+    second: HanyaWalkNorth_38
+  - first:
+      213: -403369888762154590
+    second: HanyaWalkNorth_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HanyaWalkNorth_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 295
+        width: 60
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b5e7e24ea58452c0800000000000000
+      internalID: -4443779948814539338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 296
+        width: 60
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d863c3c492ed6a810800000000000000
+      internalID: 1776351371998279309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_2
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 294
+        width: 59
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a07c6beb8caef5cf0800000000000000
+      internalID: -261232105450191094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_3
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 295
+        width: 60
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7acbe691bf56ea110800000000000000
+      internalID: 1274067873730313383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_4
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 296
+        width: 61
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c013d9326421cd0800000000000000
+      internalID: -2588929717009576844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_5
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 296
+        width: 60
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 062dc15c1cc189890800000000000000
+      internalID: -7451173964923219360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_6
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 294
+        width: 60
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3550295d719c3c00800000000000000
+      internalID: 881739594610005310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_7
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 295
+        width: 60
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0789078242379330800000000000000
+      internalID: 3717495278732412683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_8
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 225
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 446cb656029b59e20800000000000000
+      internalID: 3356792646066226756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_9
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 227
+        width: 59
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4a142cd34d7d7880800000000000000
+      internalID: -8611589182052885938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_10
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 227
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 335f1d5b59b6557d0800000000000000
+      internalID: -2930317691789904589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_11
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 226
+        width: 59
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b77ce621f3e75d3e0800000000000000
+      internalID: -2029577247703251077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_12
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 226
+        width: 60
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e36628c08d24f3470800000000000000
+      internalID: 8376487327622653502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_13
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 227
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8040a8518a60532b0800000000000000
+      internalID: -5605566842207075320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_14
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 225
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 034122711b6c1aaa0800000000000000
+      internalID: -6151417152111766480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_15
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 227
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df6fe1a45f4bc10a0800000000000000
+      internalID: -6909448762689652995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_16
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 154
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1698b11b4b569500800000000000000
+      internalID: 402609594674222620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_17
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 156
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99e8c576bf47d58b0800000000000000
+      internalID: -5161840974776988007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_18
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 156
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bc3a2b082d1c9220800000000000000
+      internalID: 2493900351479626935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_19
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 154
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dc3118abeef3c3c0800000000000000
+      internalID: -4340345327764554540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_20
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 154
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e50c90e9caba1d30800000000000000
+      internalID: 4403036961927595496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_21
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 156
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 815a06220dc9d8570800000000000000
+      internalID: 8470598891897660696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_22
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 156
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4963e1a40764a30e0800000000000000
+      internalID: -2289440012470700396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_23
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 155
+        width: 60
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec97796cd6e770da0800000000000000
+      internalID: -5978670970362693170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_24
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 87
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12f45f7e9445ec480800000000000000
+      internalID: -8877065139099709663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_25
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 87
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07db24b576dd06890800000000000000
+      internalID: -7466724746197811856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_26
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 86
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c1ab608092afd910800000000000000
+      internalID: 1864387512268202439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_27
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 86
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7ca4c2c6fae27ac0800000000000000
+      internalID: -3858763585152570242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_28
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 87
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bed1609d223cf4b90800000000000000
+      internalID: -7255365920233218581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_29
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 87
+        width: 58
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1707c7974fb0c2630800000000000000
+      internalID: 3903508121661501553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_30
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 88
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02c7f14f9ea20030800000000000000
+      internalID: 3459519462803751439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_31
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 86
+        width: 60
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc6609ebbffe32780800000000000000
+      internalID: -8708853389891442993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_32
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 19
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a39fbb4ea9fc4230800000000000000
+      internalID: 3624546327116878758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_33
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 18
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97e7676b36f88df30800000000000000
+      internalID: 4600584677784714873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_34
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 19
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a4698bb0fc224190800000000000000
+      internalID: -7979766177296980831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_35
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 17
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c61195ae41e6be590800000000000000
+      internalID: -7643894906421178004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_36
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 20
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d14d3296711595d90800000000000000
+      internalID: -7108561375837563875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_37
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 19
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ece7364ab5abb2810800000000000000
+      internalID: 1741690583671602894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_38
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 20
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ce62a592d57cba60800000000000000
+      internalID: 7691151810955996870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanyaWalkNorth_39
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 14
+        width: 57
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a13e3b2931f66af0800000000000000
+      internalID: -403369888762154590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HanyaWalkNorth_0: -4443779948814539338
+      HanyaWalkNorth_1: 1776351371998279309
+      HanyaWalkNorth_10: -2930317691789904589
+      HanyaWalkNorth_11: -2029577247703251077
+      HanyaWalkNorth_12: 8376487327622653502
+      HanyaWalkNorth_13: -5605566842207075320
+      HanyaWalkNorth_14: -6151417152111766480
+      HanyaWalkNorth_15: -6909448762689652995
+      HanyaWalkNorth_16: 402609594674222620
+      HanyaWalkNorth_17: -5161840974776988007
+      HanyaWalkNorth_18: 2493900351479626935
+      HanyaWalkNorth_19: -4340345327764554540
+      HanyaWalkNorth_2: -261232105450191094
+      HanyaWalkNorth_20: 4403036961927595496
+      HanyaWalkNorth_21: 8470598891897660696
+      HanyaWalkNorth_22: -2289440012470700396
+      HanyaWalkNorth_23: -5978670970362693170
+      HanyaWalkNorth_24: -8877065139099709663
+      HanyaWalkNorth_25: -7466724746197811856
+      HanyaWalkNorth_26: 1864387512268202439
+      HanyaWalkNorth_27: -3858763585152570242
+      HanyaWalkNorth_28: -7255365920233218581
+      HanyaWalkNorth_29: 3903508121661501553
+      HanyaWalkNorth_3: 1274067873730313383
+      HanyaWalkNorth_30: 3459519462803751439
+      HanyaWalkNorth_31: -8708853389891442993
+      HanyaWalkNorth_32: 3624546327116878758
+      HanyaWalkNorth_33: 4600584677784714873
+      HanyaWalkNorth_34: -7979766177296980831
+      HanyaWalkNorth_35: -7643894906421178004
+      HanyaWalkNorth_36: -7108561375837563875
+      HanyaWalkNorth_37: 1741690583671602894
+      HanyaWalkNorth_38: 7691151810955996870
+      HanyaWalkNorth_39: -403369888762154590
+      HanyaWalkNorth_4: -2588929717009576844
+      HanyaWalkNorth_5: -7451173964923219360
+      HanyaWalkNorth_6: 881739594610005310
+      HanyaWalkNorth_7: 3717495278732412683
+      HanyaWalkNorth_8: 3356792646066226756
+      HanyaWalkNorth_9: -8611589182052885938
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

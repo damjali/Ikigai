@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: bace3e5fe98f34c4dba0f9107c64a3fb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8065464064628457906
+    second: stand still south_0
+  - first:
+      213: 2066688253136440218
+    second: stand still south_1
+  - first:
+      213: -7646367967979561733
+    second: stand still south_2
+  - first:
+      213: 6032413268603189986
+    second: stand still south_3
+  - first:
+      213: 8590576446676672054
+    second: stand still south_4
+  - first:
+      213: 1273500000857169259
+    second: stand still south_5
+  - first:
+      213: 2259054062770394868
+    second: stand still south_6
+  - first:
+      213: 2786255240768451382
+    second: stand still south_7
+  - first:
+      213: 4407864024647878946
+    second: stand still south_8
+  - first:
+      213: 6714283705823955490
+    second: stand still south_9
+  - first:
+      213: -3544889732560157501
+    second: stand still south_10
+  - first:
+      213: 3179023883103872116
+    second: stand still south_11
+  - first:
+      213: -356018678298738447
+    second: stand still south_12
+  - first:
+      213: -5652670884036924955
+    second: stand still south_13
+  - first:
+      213: 4767776801281138056
+    second: stand still south_14
+  - first:
+      213: -4999559929179569538
+    second: stand still south_15
+  - first:
+      213: 8890089167717730171
+    second: stand still south_16
+  - first:
+      213: -647751221811883166
+    second: stand still south_17
+  - first:
+      213: -4009212085828727854
+    second: stand still south_18
+  - first:
+      213: 2591795909801531075
+    second: stand still south_19
+  - first:
+      213: -6239426116905914311
+    second: stand still south_20
+  - first:
+      213: 1668250883452315036
+    second: stand still south_21
+  - first:
+      213: 4498452618234344120
+    second: stand still south_22
+  - first:
+      213: -473579820394300873
+    second: stand still south_23
+  - first:
+      213: -1623266340672055956
+    second: stand still south_24
+  - first:
+      213: -5184525978246499578
+    second: stand still south_25
+  - first:
+      213: 8776190392218886780
+    second: stand still south_26
+  - first:
+      213: 807452724054733487
+    second: stand still south_27
+  - first:
+      213: 2371430943836558920
+    second: stand still south_28
+  - first:
+      213: -7081114431876436331
+    second: stand still south_29
+  - first:
+      213: -8175173300593117588
+    second: stand still south_30
+  - first:
+      213: 3834133634271521007
+    second: stand still south_31
+  - first:
+      213: -4747291416859231787
+    second: stand still south_32
+  - first:
+      213: -6319773907010885279
+    second: stand still south_33
+  - first:
+      213: 8567079189445363388
+    second: stand still south_34
+  - first:
+      213: -7252350571604054368
+    second: stand still south_35
+  - first:
+      213: -278755429876671448
+    second: stand still south_36
+  - first:
+      213: 8890018086474036485
+    second: stand still south_37
+  - first:
+      213: 7765419422931198814
+    second: stand still south_38
+  - first:
+      213: 3881650128864906802
+    second: stand still south_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: stand still south_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 300
+        width: 63
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b18bd885d84eef60800000000000000
+      internalID: 8065464064628457906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 300
+        width: 63
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9b8ba5340a5eac10800000000000000
+      internalID: 2066688253136440218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_2
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 301
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfc17a668d4a2e590800000000000000
+      internalID: -7646367967979561733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_3
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 301
+        width: 63
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea327d18ef67b350800000000000000
+      internalID: 6032413268603189986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_4
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 301
+        width: 63
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63e100073cbd73770800000000000000
+      internalID: 8590576446676672054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_5
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 301
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d1d84e0816ca110800000000000000
+      internalID: 1273500000857169259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_6
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 300
+        width: 63
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f615db73b5c95f10800000000000000
+      internalID: 2259054062770394868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_7
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 300
+        width: 63
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633f2971164caa620800000000000000
+      internalID: 2786255240768451382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_8
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 228
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2294c5ff9f0eb2d30800000000000000
+      internalID: 4407864024647878946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_9
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 229
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22a84d6e47ded2d50800000000000000
+      internalID: 6714283705823955490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_10
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 228
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c482d2e1950ecec0800000000000000
+      internalID: -3544889732560157501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_11
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 228
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 474a3e4e0692e1c20800000000000000
+      internalID: 3179023883103872116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_12
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 232
+        width: 61
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f0899af5ea2f0bf0800000000000000
+      internalID: -356018678298738447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_13
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 231
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e929c4b7cdad81b0800000000000000
+      internalID: -5652670884036924955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_14
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 227
+        width: 60
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88dd5b07dbb8a2240800000000000000
+      internalID: 4767776801281138056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_15
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 228
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7289f3bbbefd9ab0800000000000000
+      internalID: -4999559929179569538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_16
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 159
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b770d5f0ff0ff5b70800000000000000
+      internalID: 8890089167717730171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_17
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 157
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 263d31912b9b207f0800000000000000
+      internalID: -647751221811883166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_18
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 158
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dbc9f289da6c58c0800000000000000
+      internalID: -4009212085828727854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_19
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 158
+        width: 61
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c6d706e5a8e7f320800000000000000
+      internalID: 2591795909801531075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_20
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 159
+        width: 61
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 930378b210b1969a0800000000000000
+      internalID: -6239426116905914311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_21
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 159
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c952868f651d62710800000000000000
+      internalID: 1668250883452315036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_22
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 158
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b2b8cc82d6bd6e30800000000000000
+      internalID: 4498452618234344120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_23
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 157
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73aba9899a18d69f0800000000000000
+      internalID: -473579820394300873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_24
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 89
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c65d4641ddff879e0800000000000000
+      internalID: -1623266340672055956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_25
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 89
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60335d1771ddc08b0800000000000000
+      internalID: -5184525978246499578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_26
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 88
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c722769d9aa4bc970800000000000000
+      internalID: 8776190392218886780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_27
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 89
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa2343679f5a43b00800000000000000
+      internalID: 807452724054733487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_28
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 89
+        width: 59
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8465fb801e309e020800000000000000
+      internalID: 2371430943836558920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_29
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 89
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59eec1a01f3dabd90800000000000000
+      internalID: -7081114431876436331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_30
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 89
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c66b3e07233fb8e80800000000000000
+      internalID: -8175173300593117588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_31
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 89
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe8a12ce934953530800000000000000
+      internalID: 3834133634271521007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_32
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 19
+        width: 57
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d938dccb9b3e1eb0800000000000000
+      internalID: -4747291416859231787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_33
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 21
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16965db7d17ab48a0800000000000000
+      internalID: -6319773907010885279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_34
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 19
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb64889e12164e670800000000000000
+      internalID: 8567079189445363388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_35
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 20
+        width: 58
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ae60f864997a5b90800000000000000
+      internalID: -7252350571604054368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_36
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 21
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c5df6d969a12cf0800000000000000
+      internalID: -278755429876671448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_37
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 21
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 505351b2950bf5b70800000000000000
+      internalID: 8890018086474036485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_38
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 20
+        width: 58
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e53abbb72df44cb60800000000000000
+      internalID: 7765419422931198814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stand still south_39
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 21
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e8751f9346ed530800000000000000
+      internalID: 3881650128864906802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 76fa57c01f92f4b4eb0f70ac92595f58
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      stand still south_0: 8065464064628457906
+      stand still south_1: 2066688253136440218
+      stand still south_10: -3544889732560157501
+      stand still south_11: 3179023883103872116
+      stand still south_12: -356018678298738447
+      stand still south_13: -5652670884036924955
+      stand still south_14: 4767776801281138056
+      stand still south_15: -4999559929179569538
+      stand still south_16: 8890089167717730171
+      stand still south_17: -647751221811883166
+      stand still south_18: -4009212085828727854
+      stand still south_19: 2591795909801531075
+      stand still south_2: -7646367967979561733
+      stand still south_20: -6239426116905914311
+      stand still south_21: 1668250883452315036
+      stand still south_22: 4498452618234344120
+      stand still south_23: -473579820394300873
+      stand still south_24: -1623266340672055956
+      stand still south_25: -5184525978246499578
+      stand still south_26: 8776190392218886780
+      stand still south_27: 807452724054733487
+      stand still south_28: 2371430943836558920
+      stand still south_29: -7081114431876436331
+      stand still south_3: 6032413268603189986
+      stand still south_30: -8175173300593117588
+      stand still south_31: 3834133634271521007
+      stand still south_32: -4747291416859231787
+      stand still south_33: -6319773907010885279
+      stand still south_34: 8567079189445363388
+      stand still south_35: -7252350571604054368
+      stand still south_36: -278755429876671448
+      stand still south_37: 8890018086474036485
+      stand still south_38: 7765419422931198814
+      stand still south_39: 3881650128864906802
+      stand still south_4: 8590576446676672054
+      stand still south_5: 1273500000857169259
+      stand still south_6: 2259054062770394868
+      stand still south_7: 2786255240768451382
+      stand still south_8: 4407864024647878946
+      stand still south_9: 6714283705823955490
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
