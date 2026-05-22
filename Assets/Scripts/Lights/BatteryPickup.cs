@@ -19,7 +19,7 @@ public class BatteryPickup : MonoBehaviour
             {
                 levelManager.StunEnemies(stunDuration);
                 // levelManager.MedicineCollected();
-            }
+            } 
 
             // 2. Find Player 2 in the scene to increase battery
             GameObject player2 = GameObject.FindGameObjectWithTag("Player2");
