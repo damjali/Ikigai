@@ -1,294 +1,294 @@
-using UnityEngine;
-using UnityEngine.Tilemaps;
-using System.Collections.Generic;
-using System.Linq;
+    using UnityEngine;
+    using UnityEngine.Tilemaps;
+    using System.Collections.Generic;
+    using System.Linq;
 
-[RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(Animator))]
-public class Enemy : MonoBehaviour
-{
-    [Header("References")]
-    public Tilemap wallTilemap;
-    public Transform player;
-    private Animator anim;
-    private Rigidbody2D rb;
-
-    [Header("Movement")]
-    public float speed = 3f;
-    public float pathUpdateRate = 0.1f;
-
-    [Header("Behavior Settings")]
-    public float lockOnDistance = 3f;
-    public int targetSpread = 2;
-    [Range(0f, 0.4f)] public float randomJitter = 0.25f;
-
-    [Header("Intelligence Settings")]
-    [Range(0f, 1f)]
-    public float curiosity = 0.3f;
-
-    [Header("Audio Settings (The Heartbeat)")]
-    public float heartbeatDistance = 8f; // How close before the heartbeat starts
-    private float heartbeatTimer; // Now used as a pure 3-second cooldown
-
-    [Header("Spawn Settings")]
-    private float originX;
-    private float originY;
-    private bool originSaved = false;
-
-    // Pathfinding & Movement State
-    private Vector3 currentTargetWithJitter;
-    private Vector2 currentMovement;
-    private bool[,] grid;
-    private Vector2Int gridOffset;
-    private List<Vector2Int> currentPath = new List<Vector2Int>();
-    private int pathIndex;
-    private float timer;
-    private float individualSpeed;
-
-    void Awake()
+    [RequireComponent(typeof(Rigidbody2D))]
+    [RequireComponent(typeof(Animator))]
+    public class Enemy : MonoBehaviour
     {
-        rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
-    }
+        [Header("References")]
+        public Tilemap wallTilemap;
+        public Transform player;
+        private Animator anim;
+        private Rigidbody2D rb;
 
-    void Start()
-    {
-        if (wallTilemap != null) CreateGridFromTilemap();
+        [Header("Movement")]
+        public float speed = 3f;
+        public float pathUpdateRate = 0.1f;
 
-        individualSpeed = speed + Random.Range(-0.5f, 0.5f);
+        [Header("Behavior Settings")]
+        public float lockOnDistance = 3f;
+        public int targetSpread = 2;
+        [Range(0f, 0.4f)] public float randomJitter = 0.25f;
 
-        // Save origin position if not already set
-        if (!originSaved)
+        [Header("Intelligence Settings")]
+        [Range(0f, 1f)]
+        public float curiosity = 0.3f;
+
+        [Header("Audio Settings (The Heartbeat)")]
+        public float heartbeatDistance = 8f; // How close before the heartbeat starts
+        private float heartbeatTimer; // Now used as a pure 3-second cooldown
+
+        [Header("Spawn Settings")]
+        private float originX;
+        private float originY;
+        private bool originSaved = false;
+
+        // Pathfinding & Movement State
+        private Vector3 currentTargetWithJitter;
+        private Vector2 currentMovement;
+        private bool[,] grid;
+        private Vector2Int gridOffset;
+        private List<Vector2Int> currentPath = new List<Vector2Int>();
+        private int pathIndex;
+        private float timer;
+        private float individualSpeed;
+
+        void Awake()
         {
-            Vector2Int startGrid = WorldToGrid(transform.position);
-            originX = startGrid.x;
-            originY = startGrid.y;
-            originSaved = true;
+            rb = GetComponent<Rigidbody2D>();
+            anim = GetComponent<Animator>();
         }
-    }
 
-    void Update()
-    {
-        if (player == null || grid == null) return;
-
-        // --- THE TENSION BUILDER (HEARTBEAT LOGIC) ---
-        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-        
-        if (distanceToPlayer <= heartbeatDistance)
+        void Start()
         {
-            heartbeatTimer -= Time.deltaTime;
+            if (wallTilemap != null) CreateGridFromTilemap();
+
+            individualSpeed = speed + Random.Range(-0.5f, 0.5f);
+
+            // Save origin position if not already set
+            if (!originSaved)
+            {
+                Vector2Int startGrid = WorldToGrid(transform.position);
+                originX = startGrid.x;
+                originY = startGrid.y;
+                originSaved = true;
+            }
+        }
+
+        void Update()
+        {
+            if (player == null || grid == null) return;
+
+            // --- THE TENSION BUILDER (HEARTBEAT LOGIC) ---
+            float distanceToPlayer = Vector2.Distance(transform.position, player.position);
             
-            if (heartbeatTimer <= 0)
+            if (distanceToPlayer <= heartbeatDistance)
             {
-                // Play the sound (AudioManager will block it if it's already playing!)
-                AudioManager.instance.PlayHeartbeat();
+                heartbeatTimer -= Time.deltaTime;
                 
-                // Wait exactly 3 seconds before checking again
-                heartbeatTimer = 3f; 
-            }
-        }
-        else
-        {
-            // Reset the timer when player escapes so it triggers immediately next time
-            heartbeatTimer = 0f;
-        }
-        // ---------------------------------------------
-
-        timer -= Time.deltaTime;
-        if (timer <= 0)
-        {
-            GeneratePath();
-            timer = pathUpdateRate + Random.Range(-0.05f, 0.05f);
-        }
-
-        FollowPath();
-        UpdateAnimations();
-    }
-
-    void UpdateAnimations()
-    {
-        if (anim != null)
-        {
-            bool isMoving = currentMovement.sqrMagnitude > 0;
-            anim.SetBool("IsMoving", isMoving);
-
-            if (isMoving)
-            {
-                anim.SetFloat("MoveX", currentMovement.x);
-                anim.SetFloat("MoveY", currentMovement.y);
-            }
-        }
-    }
-
-    void GeneratePath()
-    {
-        Vector2Int start = WorldToGrid(transform.position);
-        Vector2Int playerGridPos = WorldToGrid(player.position);
-        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-
-        Vector2Int finalTarget = (distanceToPlayer <= lockOnDistance)
-            ? playerGridPos
-            : GetRandomizedTarget(playerGridPos);
-
-        if (start == finalTarget)
-        {
-            currentPath.Clear();
-            currentMovement = Vector2.zero;
-            return;
-        }
-
-        Queue<Vector2Int> queue = new Queue<Vector2Int>();
-        queue.Enqueue(start);
-        Dictionary<Vector2Int, Vector2Int> parentMap = new Dictionary<Vector2Int, Vector2Int>();
-        parentMap[start] = start;
-
-        while (queue.Count > 0)
-        {
-            Vector2Int curr = queue.Dequeue();
-            if (curr == finalTarget) break;
-
-            foreach (Vector2Int neighbor in GetSmartNeighbors(curr, finalTarget))
-            {
-                if (grid[neighbor.x, neighbor.y] && !parentMap.ContainsKey(neighbor))
+                if (heartbeatTimer <= 0)
                 {
-                    queue.Enqueue(neighbor);
-                    parentMap[neighbor] = curr;
+                    // Play the sound (AudioManager will block it if it's already playing!)
+                    AudioManager.instance.PlayHeartbeat();
+                    
+                    // Wait exactly 3 seconds before checking again
+                    heartbeatTimer = 3f; 
+                }
+            }
+            else
+            {
+                // Reset the timer when player escapes so it triggers immediately next time
+                heartbeatTimer = 0f;
+            }
+            // ---------------------------------------------
+
+            timer -= Time.deltaTime;
+            if (timer <= 0)
+            {
+                GeneratePath();
+                timer = pathUpdateRate + Random.Range(-0.05f, 0.05f);
+            }
+
+            FollowPath();
+            UpdateAnimations();
+        }
+
+        void UpdateAnimations()
+        {
+            if (anim != null)
+            {
+                bool isMoving = currentMovement.sqrMagnitude > 0;
+                anim.SetBool("IsMoving", isMoving);
+
+                if (isMoving)
+                {
+                    anim.SetFloat("MoveX", currentMovement.x);
+                    anim.SetFloat("MoveY", currentMovement.y);
                 }
             }
         }
 
-        if (!parentMap.ContainsKey(finalTarget)) return;
-
-        currentPath.Clear();
-        Vector2Int temp = finalTarget;
-
-        while (temp != start)
+        void GeneratePath()
         {
-            currentPath.Add(temp);
-            temp = parentMap[temp];
-        }
-        currentPath.Reverse();
+            Vector2Int start = WorldToGrid(transform.position);
+            Vector2Int playerGridPos = WorldToGrid(player.position);
+            float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-        pathIndex = 0;
-        if (currentPath.Count > 0) UpdateJitteredTarget();
-    }
+            Vector2Int finalTarget = (distanceToPlayer <= lockOnDistance)
+                ? playerGridPos
+                : GetRandomizedTarget(playerGridPos);
 
-    void FollowPath()
-{
-    if (currentPath == null || currentPath.Count == 0 || pathIndex >= currentPath.Count)
-    {
-        currentMovement = Vector2.zero;
-        rb.linearVelocity = Vector2.zero; // Stop the physics body completely
-        return;
-    }
-
-    // Calculate direction
-    Vector3 directionToTarget = (currentTargetWithJitter - transform.position).normalized;
-    currentMovement = new Vector2(directionToTarget.x, directionToTarget.y);
-
-    // THE FIX: Use Physics Velocity instead of transform.position! 
-    // This stops the physics engine from fighting the movement.
-    rb.linearVelocity = currentMovement * individualSpeed;
-
-    // Check if we reached the current node
-    if (Vector2.Distance(transform.position, currentTargetWithJitter) < 0.15f)
-    {
-        pathIndex++;
-        if (pathIndex < currentPath.Count) UpdateJitteredTarget();
-    }
-}
-
-    void UpdateJitteredTarget()
-    {
-        if (currentPath.Count == 0 || pathIndex >= currentPath.Count) return;
-
-        Vector3 rawCenter = GridToWorld(currentPath[pathIndex]);
-        float currentDist = Vector2.Distance(transform.position, player.position);
-        float jitter = (currentDist > lockOnDistance) ? randomJitter : 0.05f;
-        currentTargetWithJitter = rawCenter + new Vector3(Random.Range(-jitter, jitter), Random.Range(-jitter, jitter), 0);
-    }
-
-    void CreateGridFromTilemap()
-    {
-        BoundsInt bounds = wallTilemap.cellBounds;
-        grid = new bool[bounds.size.x, bounds.size.y];
-        gridOffset = new Vector2Int(bounds.xMin, bounds.yMin);
-
-        for (int x = 0; x < bounds.size.x; x++)
-        {
-            for (int y = 0; y < bounds.size.y; y++)
+            if (start == finalTarget)
             {
-                Vector3Int localAddr = new Vector3Int(x + gridOffset.x, y + gridOffset.y, 0);
-                grid[x, y] = !wallTilemap.HasTile(localAddr);
+                currentPath.Clear();
+                currentMovement = Vector2.zero;
+                return;
+            }
+
+            Queue<Vector2Int> queue = new Queue<Vector2Int>();
+            queue.Enqueue(start);
+            Dictionary<Vector2Int, Vector2Int> parentMap = new Dictionary<Vector2Int, Vector2Int>();
+            parentMap[start] = start;
+
+            while (queue.Count > 0)
+            {
+                Vector2Int curr = queue.Dequeue();
+                if (curr == finalTarget) break;
+
+                foreach (Vector2Int neighbor in GetSmartNeighbors(curr, finalTarget))
+                {
+                    if (grid[neighbor.x, neighbor.y] && !parentMap.ContainsKey(neighbor))
+                    {
+                        queue.Enqueue(neighbor);
+                        parentMap[neighbor] = curr;
+                    }
+                }
+            }
+
+            if (!parentMap.ContainsKey(finalTarget)) return;
+
+            currentPath.Clear();
+            Vector2Int temp = finalTarget;
+
+            while (temp != start)
+            {
+                currentPath.Add(temp);
+                temp = parentMap[temp];
+            }
+            currentPath.Reverse();
+
+            pathIndex = 0;
+            if (currentPath.Count > 0) UpdateJitteredTarget();
+        }
+
+        void FollowPath()
+    {
+        if (currentPath == null || currentPath.Count == 0 || pathIndex >= currentPath.Count)
+        {
+            currentMovement = Vector2.zero;
+            rb.linearVelocity = Vector2.zero; // Stop the physics body completely
+            return;
+        }
+
+        // Calculate direction
+        Vector3 directionToTarget = (currentTargetWithJitter - transform.position).normalized;
+        currentMovement = new Vector2(directionToTarget.x, directionToTarget.y);
+
+        // THE FIX: Use Physics Velocity instead of transform.position! 
+        // This stops the physics engine from fighting the movement.
+        rb.linearVelocity = currentMovement * individualSpeed;
+
+        // Check if we reached the current node
+        if (Vector2.Distance(transform.position, currentTargetWithJitter) < 0.1f)
+        {
+            pathIndex++;
+            if (pathIndex < currentPath.Count) UpdateJitteredTarget();
+        }
+    }
+
+        void UpdateJitteredTarget()
+        {
+            if (currentPath.Count == 0 || pathIndex >= currentPath.Count) return;
+
+            Vector3 rawCenter = GridToWorld(currentPath[pathIndex]);
+            float currentDist = Vector2.Distance(transform.position, player.position);
+            float jitter = (currentDist > lockOnDistance) ? randomJitter : 0.05f;
+            currentTargetWithJitter = rawCenter + new Vector3(Random.Range(-jitter, jitter), Random.Range(-jitter, jitter), 0);
+        }
+
+        void CreateGridFromTilemap()
+        {
+            BoundsInt bounds = wallTilemap.cellBounds;
+            grid = new bool[bounds.size.x, bounds.size.y];
+            gridOffset = new Vector2Int(bounds.xMin, bounds.yMin);
+
+            for (int x = 0; x < bounds.size.x; x++)
+            {
+                for (int y = 0; y < bounds.size.y; y++)
+                {
+                    Vector3Int localAddr = new Vector3Int(x + gridOffset.x, y + gridOffset.y, 0);
+                    grid[x, y] = !wallTilemap.HasTile(localAddr);
+                }
             }
         }
-    }
 
-    IEnumerable<Vector2Int> GetSmartNeighbors(Vector2Int current, Vector2Int target)
-    {
-        List<Vector2Int> neighbors = new List<Vector2Int>
+        IEnumerable<Vector2Int> GetSmartNeighbors(Vector2Int current, Vector2Int target)
         {
-            current + Vector2Int.up, current + Vector2Int.down,
-            current + Vector2Int.left, current + Vector2Int.right
-        };
-
-        if (Random.value < curiosity)
-        {
-            for (int i = neighbors.Count - 1; i > 0; i--)
+            List<Vector2Int> neighbors = new List<Vector2Int>
             {
-                int r = Random.Range(0, i + 1);
-                var t = neighbors[i]; neighbors[i] = neighbors[r]; neighbors[r] = t;
+                current + Vector2Int.up, current + Vector2Int.down,
+                current + Vector2Int.left, current + Vector2Int.right
+            };
+
+            if (Random.value < curiosity)
+            {
+                for (int i = neighbors.Count - 1; i > 0; i--)
+                {
+                    int r = Random.Range(0, i + 1);
+                    var t = neighbors[i]; neighbors[i] = neighbors[r]; neighbors[r] = t;
+                }
+            }
+            else
+            {
+                neighbors = neighbors.OrderBy(n => Vector2Int.Distance(n, target)).ToList();
+            }
+
+            foreach (var n in neighbors)
+            {
+                if (n.x >= 0 && n.x < grid.GetLength(0) && n.y >= 0 && n.y < grid.GetLength(1))
+                    yield return n;
             }
         }
-        else
+
+        Vector2Int GetRandomizedTarget(Vector2Int baseTarget)
         {
-            neighbors = neighbors.OrderBy(n => Vector2Int.Distance(n, target)).ToList();
+            Vector2Int pot = baseTarget + new Vector2Int(Random.Range(-targetSpread, targetSpread + 1), Random.Range(-targetSpread, targetSpread + 1));
+            if (pot.x >= 0 && pot.x < grid.GetLength(0) && pot.y >= 0 && pot.y < grid.GetLength(1) && grid[pot.x, pot.y])
+                return pot;
+            return baseTarget;
         }
 
-        foreach (var n in neighbors)
+        Vector2Int WorldToGrid(Vector3 worldPos)
         {
-            if (n.x >= 0 && n.x < grid.GetLength(0) && n.y >= 0 && n.y < grid.GetLength(1))
-                yield return n;
+            Vector3Int cell = wallTilemap.WorldToCell(worldPos);
+            return new Vector2Int(Mathf.Clamp(cell.x - gridOffset.x, 0, grid.GetLength(0) - 1), Mathf.Clamp(cell.y - gridOffset.y, 0, grid.GetLength(1) - 1));
+        }
+
+        Vector3 GridToWorld(Vector2Int gridPos)
+        {
+            Vector3Int cell = new Vector3Int(gridPos.x + gridOffset.x, gridPos.y + gridOffset.y, 0);
+            return wallTilemap.GetCellCenterWorld(cell);
+        }
+
+        public void reset()
+        {
+            Vector2 worldSpawn = new Vector2(originX, originY);
+            if (rb != null)
+            {
+                rb.linearVelocity = Vector2.zero;
+                rb.angularVelocity = 0f;
+                rb.position = worldSpawn;
+            }
+            transform.position = worldSpawn;
+            clearPath();
+        }
+
+        private void clearPath()
+        {
+            currentPath.Clear();
+            pathIndex = 0;
+            timer = 0;
         }
     }
-
-    Vector2Int GetRandomizedTarget(Vector2Int baseTarget)
-    {
-        Vector2Int pot = baseTarget + new Vector2Int(Random.Range(-targetSpread, targetSpread + 1), Random.Range(-targetSpread, targetSpread + 1));
-        if (pot.x >= 0 && pot.x < grid.GetLength(0) && pot.y >= 0 && pot.y < grid.GetLength(1) && grid[pot.x, pot.y])
-            return pot;
-        return baseTarget;
-    }
-
-    Vector2Int WorldToGrid(Vector3 worldPos)
-    {
-        Vector3Int cell = wallTilemap.WorldToCell(worldPos);
-        return new Vector2Int(Mathf.Clamp(cell.x - gridOffset.x, 0, grid.GetLength(0) - 1), Mathf.Clamp(cell.y - gridOffset.y, 0, grid.GetLength(1) - 1));
-    }
-
-    Vector3 GridToWorld(Vector2Int gridPos)
-    {
-        Vector3Int cell = new Vector3Int(gridPos.x + gridOffset.x, gridPos.y + gridOffset.y, 0);
-        return wallTilemap.GetCellCenterWorld(cell);
-    }
-
-    public void reset()
-    {
-        Vector2 worldSpawn = new Vector2(originX, originY);
-        if (rb != null)
-        {
-            rb.linearVelocity = Vector2.zero;
-            rb.angularVelocity = 0f;
-            rb.position = worldSpawn;
-        }
-        transform.position = worldSpawn;
-        clearPath();
-    }
-
-    private void clearPath()
-    {
-        currentPath.Clear();
-        pathIndex = 0;
-        timer = 0;
-    }
-}
